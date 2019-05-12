@@ -7,14 +7,16 @@ using Schoolegister.Model;
 
 namespace Schoolegister.View
 {
+    public delegate void Login();
     public interface ILoginView
     {
-        event EventHandler LogIn;
+        event Login LoginIn;
 
-        string User { get; set; }
-        string Password { get; set; }
+        string User { get; }
+        string Password { get; }
+        bool LoginResult { get; set; }
 
-        void LoginResult();
-        void LoadUsers(IEnumerable<User>  users);
+        void Login(object sender, EventArgs e);
+        User GetUser();
     }
 }

@@ -4,6 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Schoolegister.View;
+using Schoolegister.Repository;
+using Schoolegister.Presenter;
 
 namespace Schoolegister
 {
@@ -17,7 +19,10 @@ namespace Schoolegister
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginView());
+            var view = new LoginView();
+            var repository = new UserRepository(new SchoolContext());
+            var presenter = new LoginPresenter(view, repository);
+            Application.Run(view);
         }
     }
 }

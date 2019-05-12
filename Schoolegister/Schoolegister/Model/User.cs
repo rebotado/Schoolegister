@@ -9,7 +9,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Schoolegister.Model
 {
-    [Table("User")]
+    [Table("Users")]
     public class User
     {
         [Key]

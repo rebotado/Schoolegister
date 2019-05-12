@@ -21,5 +21,6 @@ namespace Schoolegister.Repository
         public DbSet<Professor> Professors { get; set; }
         public DbSet<Schedule> Schedules { get; set; }
         public DbSet<Student> Students { get; set; }
+        public DbSet<User> Users { get; set; }
     }
 }

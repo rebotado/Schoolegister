@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MetroFramework.Forms;
 using Schoolegister.Model;
+using System.Diagnostics;
 
 namespace Schoolegister.View
 {
@@ -19,19 +20,32 @@ namespace Schoolegister.View
             InitializeComponent();
         }
 
-        public string User { get { return "s"; } }
-        public string Password { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string User { get { return userTextBox.Text; } }
+        public string Password { get { return passwordTextBox.Text; } }
+        public bool LoginResult { get; set; }
 
-        public event EventHandler LogIn;
+        public event Login LoginIn;
 
-        public void LoadUsers(IEnumerable<User> users)
+
+        public void Login(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            LoginIn();
+            if (LoginResult)
+            {
+
+            }
+            else
+            {
+                MessageBox.Show("Usuario o contrase;a incorrectas");
+            }
         }
-
-        public void LoginResult()
+        public User GetUser()
         {
-            throw new NotImplementedException();
+            return new User
+            {
+                Username = this.User,
+                Password = this.Password
+            };
         }
 
         private void LoginView_Load(object sender, EventArgs e)
