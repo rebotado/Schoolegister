@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using Schoolegister.Model;
 
 namespace Schoolegister.Model
 {
@@ -37,5 +38,10 @@ namespace Schoolegister.Model
         public string Address { get; set; }
         [Column("Email")]
         public string Email { get; set; }
+        
+
+        [ForeignKey("ScheduleID")]
+        public virtual Schedule Schedule { get; set; }
+        public int ScheduleID { get; set; }
     }
 }

@@ -27,6 +27,5 @@ namespace Schoolegister.Model
         public DateTime Saturday { get; set; }
         [Column("Sunday")]
         public DateTime Sunday { get; set; }
-
     }
 }

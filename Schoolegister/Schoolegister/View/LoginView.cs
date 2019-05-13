@@ -32,7 +32,9 @@ namespace Schoolegister.View
             LoginIn();
             if (LoginResult)
             {
-
+                var frm = new AdminView();
+                frm.Show();
+                this.Hide();
             }
             else
             {
