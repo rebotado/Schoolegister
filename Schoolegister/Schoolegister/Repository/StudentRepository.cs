@@ -10,9 +10,9 @@ namespace Schoolegister.Repository
     public class StudentRepository : IGenericRepository<Student>
     {
         private SchoolContext context;
-        public StudentRepository(SchoolContext context)
+        public StudentRepository()
         {
-            this.context = context;
+            this.context = new SchoolContext();
         }
 
         public void Add(Student obj)

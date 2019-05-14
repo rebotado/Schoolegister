@@ -9,18 +9,26 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MetroFramework.Forms;
 using MetroFramework.Controls;
+using System.Diagnostics;
 using Schoolegister.Model;
 
 namespace Schoolegister.View
 {
     public partial class MainView : MetroForm, IMainView
     {
-        private readonly User userLogged; 
+        private readonly User userLogged;
+        private readonly Dictionary<int, MetroTabPage> registerTabPages;
         public MainView(User userLogged)
         {
             this.userLogged = userLogged;
-
             InitializeComponent();
+            registerTabPages = new Dictionary<int, MetroTabPage>();
+            registerTabPages.Add(0, registerPage1);
+            registerTabPages.Add(1, registerPage2);
+            registerTabPages.Add(2, registerPage3);
+            mainTabControl.HideTab(registerPage);
+            registerTabControl.HideTab(registerPage2);
+            registerTabControl.HideTab(registerPage3);
         }
 
         public int UserType { get; set; }
@@ -41,9 +49,10 @@ namespace Schoolegister.View
 
         private void MainView_Load(object sender, EventArgs e)
         {
+            Debug.WriteLine(userLogged.PermissionLevel);
             if (userLogged.PermissionLevel == (int)PermissionLevel.Admin)
             {
-                registerPage.Show();
+                mainTabControl.ShowTab(registerPage);
             }
             else if (userLogged.PermissionLevel == (int)PermissionLevel.Professor)
             {
@@ -53,6 +62,14 @@ namespace Schoolegister.View
             {
 
             }
+        }
+
+        private void NextButton_Click(object sender, EventArgs e)
+        {
+            var currentTab = registerTabControl.SelectedTab as MetroTabPage;
+            var index = registerTabPages.FirstOrDefault(x => x.Value == currentTab).Key;
+            registerTabControl.ShowTab(registerTabPages[index + 1]);
+            registerTabControl.HideTab(registerTabPages[index]);
         }
 
 

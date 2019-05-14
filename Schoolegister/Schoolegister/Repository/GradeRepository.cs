@@ -4,36 +4,36 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Schoolegister.Model;
-using System.Data.Entity;
 
 namespace Schoolegister.Repository
 {
-    public class ProfessorRepository : IGenericRepository<Professor>
+    public class GradeRepository : IGenericRepository<Grade>
     {
         private SchoolContext context;
-        public ProfessorRepository()
+        public GradeRepository()
         {
-            this.context = new SchoolContext();
-        }
-        public void Add(Professor obj)
-        {
-            context.Professors.Add(obj);
+            context = new SchoolContext();
         }
 
-        public void Delete(Professor obj)
+        public void Add(Grade obj)
         {
-            context.Professors.Remove(obj);
+            context.Grades.Add(obj);
+        }
+
+        public void Delete(Grade obj)
+        {
+            context.Grades.Remove(obj);
         }
 
 
-        public IEnumerable<Professor> GetAll()
+        public IEnumerable<Grade> GetAll()
         {
-            return context.Professors.ToList();
+            return context.Grades.ToList();
         }
 
-        public Professor GetByID(Professor obj)
+        public Grade GetByID(Grade obj)
         {
-            return context.Professors.Find(obj.Id);
+            return context.Grades.Find(obj.Id);
         }
 
         public void Save()
@@ -41,10 +41,11 @@ namespace Schoolegister.Repository
             context.SaveChanges();
         }
 
-        public void Update(Professor obj)
+        public void Update(Grade obj)
         {
-            context.Entry(obj).State = EntityState.Modified;
+            context.Entry(obj).State = System.Data.Entity.EntityState.Modified;
         }
+
         #region Dispose
         private bool disposed = false;
         protected virtual void Dispose(bool disposing)

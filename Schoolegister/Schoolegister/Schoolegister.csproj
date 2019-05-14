@@ -90,8 +90,11 @@
     <Compile Include="Model\Course.cs" />
     <Compile Include="Model\User.cs" />
     <Compile Include="Presenter\LoginPresenter.cs" />
+    <Compile Include="Presenter\MainPresenter.cs" />
     <Compile Include="Repository\CourseRepository.cs" />
+    <Compile Include="Repository\CourseStudentsRepository.cs" />
     <Compile Include="Repository\EmployeeRepository.cs" />
+    <Compile Include="Repository\GradeRepository.cs" />
     <Compile Include="Repository\IGenericRepository.cs" />
     <Compile Include="Repository\ProfessorRepository.cs" />
     <Compile Include="Repository\ScheduleRepository.cs" />

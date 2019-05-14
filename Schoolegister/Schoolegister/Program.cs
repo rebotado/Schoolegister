@@ -20,7 +20,7 @@ namespace Schoolegister
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
              var view = new LoginView();
-             var repository = new UserRepository(new SchoolContext());
+             var repository = new UserRepository();
              var presenter = new LoginPresenter(view, repository);
              Application.Run(view);
 

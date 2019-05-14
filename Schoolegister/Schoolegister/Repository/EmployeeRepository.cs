@@ -12,9 +12,9 @@ namespace Schoolegister.Repository
     {
 
         private SchoolContext context;
-        public EmployeeRepository(SchoolContext context)
+        public EmployeeRepository()
         {
-            this.context = context;
+            this.context = new SchoolContext();
         }
         public void Add(Employee obj)
         {

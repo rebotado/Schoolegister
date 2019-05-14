@@ -30,7 +30,7 @@ namespace Schoolegister.Presenter
                 if (usr.Password == user.Password && usr.Username == user.Username)
                 {
                     view.LoginResult = true;
-                    view.UserLogged = user;
+                    view.UserLogged = usr;
                     return;
                 }
             }

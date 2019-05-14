@@ -12,12 +12,14 @@ namespace Schoolegister.Model
     [Table("CourseStudents")]
     public class CourseStudents
     {
-        [Key, Column(Order = 0)]
-        public int CourseID { get; set; }
-        [Key, Column(Order = 1)]
-        public int SutdentID { get; set; }
+        [Key]
+        public int Id { get; set; }
 
+        [ForeignKey("CourseID")]
         public virtual Course Course { get; set; }
+        public int CourseID { get; set; }
+        [ForeignKey("StudentID")]
         public virtual Student Student { get; set; }
+        public int SutdentID { get; set; }
     }
 }

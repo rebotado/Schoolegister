@@ -4,36 +4,36 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Schoolegister.Model;
-using System.Data.Entity;
 
 namespace Schoolegister.Repository
 {
-    public class ProfessorRepository : IGenericRepository<Professor>
+    public class CourseStudentsRepository : IGenericRepository<CourseStudents>
     {
         private SchoolContext context;
-        public ProfessorRepository()
+        public CourseStudentsRepository()
         {
-            this.context = new SchoolContext();
-        }
-        public void Add(Professor obj)
-        {
-            context.Professors.Add(obj);
+            context = new SchoolContext();
         }
 
-        public void Delete(Professor obj)
+        public void Add(CourseStudents obj)
         {
-            context.Professors.Remove(obj);
+            context.CourseStudents.Add(obj);
+        }
+
+        public void Delete(CourseStudents obj)
+        {
+            context.CourseStudents.Remove(obj);
         }
 
 
-        public IEnumerable<Professor> GetAll()
+        public IEnumerable<CourseStudents> GetAll()
         {
-            return context.Professors.ToList();
+            return context.CourseStudents.ToList();
         }
 
-        public Professor GetByID(Professor obj)
+        public CourseStudents GetByID(CourseStudents obj)
         {
-            return context.Professors.Find(obj.Id);
+            return context.CourseStudents.Find(obj.Id);
         }
 
         public void Save()
@@ -41,10 +41,11 @@ namespace Schoolegister.Repository
             context.SaveChanges();
         }
 
-        public void Update(Professor obj)
+        public void Update(CourseStudents obj)
         {
-            context.Entry(obj).State = EntityState.Modified;
+            context.Entry(obj).State = System.Data.Entity.EntityState.Modified;
         }
+
         #region Dispose
         private bool disposed = false;
         protected virtual void Dispose(bool disposing)

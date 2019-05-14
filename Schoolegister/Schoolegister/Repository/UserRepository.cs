@@ -11,9 +11,9 @@ namespace Schoolegister.Repository
     public class UserRepository : IGenericRepository<User>
     {
         private SchoolContext context;
-        public UserRepository(SchoolContext context)
+        public UserRepository()
         {
-            this.context = context;
+            this.context = new SchoolContext();
         }
         public void Add(User obj)
         {
@@ -34,6 +34,11 @@ namespace Schoolegister.Repository
         public User GetByID(User obj)
         {
             return context.Users.Find(obj.Id);
+        }
+
+        public User GetByUser(User obj)
+        {
+            return context.Users.Find(obj);
         }
 
         public void Save()

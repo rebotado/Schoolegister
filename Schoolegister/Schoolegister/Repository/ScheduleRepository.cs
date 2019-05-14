@@ -10,9 +10,9 @@ namespace Schoolegister.Repository
     public class ScheduleRepository : IGenericRepository<Schedule>
     {
         private SchoolContext context;
-        public ScheduleRepository(SchoolContext context)
+        public ScheduleRepository()
         {
-            this.context = context;
+            this.context = new SchoolContext();
         }
         public void Add(Schedule obj)
         {
