@@ -15,6 +15,7 @@ namespace Schoolegister.View
         string User { get; }
         string Password { get; }
         bool LoginResult { get; set; }
+        User UserLogged { get; set; }
 
         void Login(object sender, EventArgs e);
         User GetUser();

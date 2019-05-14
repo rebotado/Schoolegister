@@ -26,5 +26,9 @@ namespace Schoolegister.Model
         public double Unit5 { get; set; }
         [Column("Unit6")]
         public double Unit6 { get; set; }
+
+        [ForeignKey("StudentID")]
+        public virtual Student Student { get; set; }
+        public int StudentID { get; set; }
     }
 }

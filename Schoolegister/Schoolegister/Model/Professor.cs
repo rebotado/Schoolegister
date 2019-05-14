@@ -8,19 +8,21 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Schoolegister.Model
 {
-    [Table("Professor")]
+    [Table("Professors")]
     public class Professor : IEmployee
     {
+        private decimal salary;
+
         [Key]
         public int Id { get; set; }
         [Column("Salary")]
-        public decimal Salary { get; set; }
+        public string Salary { get => Convert.ToString(salary); set => salary = Convert.ToDecimal(value); }
         [Column("Bank")]
-        public string Bank { get; set; }
+        public int Bank { get; set; }
         [Column("BankAccount")]
         public string BankAccount { get; set; }
         [Column("Job")]
-        public string Job { get; set; }
+        public int Job { get; set; }
         [Column("FirstName")]
         public string FirstName { get; set; }
         [Column("LastName")]
@@ -32,7 +34,7 @@ namespace Schoolegister.Model
         [Column("Curp")]
         public string Curp { get; set; }
         [Column("BirthDate")]
-        public DateTime BirthDate { get; set; }
+        public string BirthDate { get; set; }
         [Column("Address")]
         public string Address { get; set; }
         [Column("Email")]

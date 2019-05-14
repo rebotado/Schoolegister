@@ -8,9 +8,9 @@ namespace Schoolegister.Model
 {
     public interface IEmployee : IPerson
     {
-        decimal Salary { get; set; }
-        string Bank { get; set; }
+        string Salary { get; set; }
+        int Bank { get; set; }
         string BankAccount { get; set; }
-        string Job { get; set; }
+        int Job { get; set; }
     }
 }

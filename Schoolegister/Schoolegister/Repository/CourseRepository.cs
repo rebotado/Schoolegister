@@ -9,7 +9,11 @@ namespace Schoolegister.Repository
 {
     public class CourseRepository : IGenericRepository<Course>
     {
-        private SchoolContext context;
+        private readonly SchoolContext context;
+        public CourseRepository(SchoolContext context)
+        {
+            this.context = context;
+        }
 
         public void Add(Course obj)
         {

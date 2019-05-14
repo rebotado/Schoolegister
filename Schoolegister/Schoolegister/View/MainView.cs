@@ -8,16 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MetroFramework.Forms;
+using MetroFramework.Controls;
 using Schoolegister.Model;
 
 namespace Schoolegister.View
 {
-    public partial class AdminView : MetroForm, IAdminView
+    public partial class MainView : MetroForm, IMainView
     {
-        private readonly User loggedUser; 
-        public AdminView(User loggedUser)
+        private readonly User userLogged; 
+        public MainView(User userLogged)
         {
-            this.loggedUser = loggedUser;
+            this.userLogged = userLogged;
+
             InitializeComponent();
         }
 
@@ -37,9 +39,26 @@ namespace Schoolegister.View
         public string BankAccount { get; set; }
         public string Job { get; set; }
 
-        private void AdminView_Load(object sender, EventArgs e)
+        private void MainView_Load(object sender, EventArgs e)
         {
+            if (userLogged.PermissionLevel == (int)PermissionLevel.Admin)
+            {
+                registerPage.Show();
+            }
+            else if (userLogged.PermissionLevel == (int)PermissionLevel.Professor)
+            {
 
+            }
+            else if (userLogged.PermissionLevel == (int)PermissionLevel.Student)
+            {
+
+            }
+        }
+
+
+        private void MainView_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

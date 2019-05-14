@@ -14,7 +14,7 @@ namespace Schoolegister.Model
         string BloodType { get; set; }
         string PhoneNumber { get; set; }
         string Curp { get; set; }
-        DateTime BirthDate { get; set; }
+        string BirthDate { get; set; }
         string Address { get; set; }
         string Email { get; set; }
     }

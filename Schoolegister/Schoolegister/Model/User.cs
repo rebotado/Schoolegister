@@ -9,6 +9,14 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Schoolegister.Model
 {
+    public enum PermissionLevel
+    {
+        Admin = 1,
+        Professor = 2,
+        Student = 3
+    }
+
+
     [Table("Users")]
     public class User
     {
@@ -18,6 +26,8 @@ namespace Schoolegister.Model
         public string Username { get; set; }
         [Column("Password")]
         public string Password { get; set; }
+        [Column("PermissionLevel")]
+        public int PermissionLevel { get; set; }
 
     }
 }

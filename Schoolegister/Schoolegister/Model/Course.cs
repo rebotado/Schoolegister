@@ -8,7 +8,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Schoolegister.Model
 {
-    [Table("Course")]
+    [Table("Courses")]
     public class Course
     {
         [Key]

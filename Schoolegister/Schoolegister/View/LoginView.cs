@@ -23,6 +23,7 @@ namespace Schoolegister.View
         public string User { get { return userTextBox.Text; } }
         public string Password { get { return passwordTextBox.Text; } }
         public bool LoginResult { get; set; }
+        public User UserLogged { get; set; }
 
         public event Login LoginIn;
 
@@ -32,7 +33,7 @@ namespace Schoolegister.View
             LoginIn();
             if (LoginResult)
             {
-                var frm = new AdminView();
+                var frm = new MainView(UserLogged);
                 frm.Show();
                 this.Hide();
             }
@@ -53,6 +54,11 @@ namespace Schoolegister.View
         private void LoginView_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void LoginView_Shown(object sender, EventArgs e)
+        {
+            Login(sender, e);
         }
     }
 }

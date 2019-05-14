@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Schoolegister.View
 {
-    public interface IAdminView
+    public interface IMainView
     {
         int UserType { get; set; }
         #region IPerson

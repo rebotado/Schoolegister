@@ -25,7 +25,7 @@ namespace Schoolegister.Model
         [Column("Curp")]
         public string Curp { get; set; }
         [Column("BirthDate")]
-        public DateTime BirthDate { get; set; }
+        public string BirthDate { get; set; }
         [Column("Address")]
         public string Address { get; set; }
         [Column("Email")]

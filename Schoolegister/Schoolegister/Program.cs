@@ -19,10 +19,12 @@ namespace Schoolegister
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            var view = new LoginView();
-            var repository = new UserRepository(new SchoolContext());
-            var presenter = new LoginPresenter(view, repository);
-            Application.Run(view);
+             var view = new LoginView();
+             var repository = new UserRepository(new SchoolContext());
+             var presenter = new LoginPresenter(view, repository);
+             Application.Run(view);
+
+
         }
     }
 }

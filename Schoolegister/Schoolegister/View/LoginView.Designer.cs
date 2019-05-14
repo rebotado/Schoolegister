@@ -47,7 +47,8 @@
             this.userTextBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.userTextBox.CustomButton.UseSelectable = true;
             this.userTextBox.CustomButton.Visible = false;
-            this.userTextBox.Lines = new string[0];
+            this.userTextBox.Lines = new string[] {
+        "rebotado"};
             this.userTextBox.Location = new System.Drawing.Point(303, 130);
             this.userTextBox.MaxLength = 32767;
             this.userTextBox.Name = "userTextBox";
@@ -59,6 +60,7 @@
             this.userTextBox.ShortcutsEnabled = true;
             this.userTextBox.Size = new System.Drawing.Size(147, 23);
             this.userTextBox.TabIndex = 0;
+            this.userTextBox.Text = "rebotado";
             this.userTextBox.UseSelectable = true;
             this.userTextBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.userTextBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -77,7 +79,8 @@
             this.passwordTextBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.passwordTextBox.CustomButton.UseSelectable = true;
             this.passwordTextBox.CustomButton.Visible = false;
-            this.passwordTextBox.Lines = new string[0];
+            this.passwordTextBox.Lines = new string[] {
+        "starwars12"};
             this.passwordTextBox.Location = new System.Drawing.Point(303, 184);
             this.passwordTextBox.MaxLength = 32767;
             this.passwordTextBox.Name = "passwordTextBox";
@@ -89,6 +92,7 @@
             this.passwordTextBox.ShortcutsEnabled = true;
             this.passwordTextBox.Size = new System.Drawing.Size(147, 23);
             this.passwordTextBox.TabIndex = 1;
+            this.passwordTextBox.Text = "starwars12";
             this.passwordTextBox.UseSelectable = true;
             this.passwordTextBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.passwordTextBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -114,6 +118,7 @@
             this.Name = "LoginView";
             this.Text = "LoginView";
             this.Load += new System.EventHandler(this.LoginView_Load);
+            this.Shown += new System.EventHandler(this.LoginView_Shown);
             this.ResumeLayout(false);
 
         }

@@ -15,13 +15,13 @@ namespace Schoolegister.Model
         [Key]
         public int Id { get; set; }
         [Column("Salary")]
-        public decimal Salary { get; set; }
+        public string Salary { get; set; }
         [Column("Bank")]
-        public string Bank { get; set; }
+        public int Bank { get; set; }
         [Column("BankAccount")]
         public string BankAccount { get; set; }
         [Column("Job")]
-        public string Job { get; set; }
+        public int Job { get; set; }
         [Column("FirstName")]
         public string FirstName { get; set; }
         [Column("LastName")]
@@ -30,10 +30,10 @@ namespace Schoolegister.Model
         public string BloodType { get; set; }
         [Column("PhoneNumber")]
         public string PhoneNumber { get; set; }
-        [Column("Curp")]
+        [Column("CURP")]
         public string Curp { get; set; }
         [Column("BirthDate")]
-        public DateTime BirthDate { get; set; }
+        public string BirthDate { get; set; }
         [Column("Address")]
         public string Address { get; set; }
         [Column("Email")]
