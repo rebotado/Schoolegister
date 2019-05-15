@@ -52,7 +52,8 @@ namespace Schoolegister.Repository
 
         public void Update(User obj)
         {
-            context.Entry(obj).State = EntityState.Modified;
+            var user = context.Users.Find(obj.Id);
+            context.Entry(user).CurrentValues.SetValues(obj);
         }
         #region Dispose
         private bool disposed = false;

@@ -46,7 +46,8 @@ namespace Schoolegister.Repository
 
         public void Update(Professor obj)
         {
-            context.Entry(obj).State = EntityState.Modified;
+            var professor = context.Professors.Find(obj.Id);
+            context.Entry(professor).CurrentValues.SetValues(obj);
         }
         #region Dispose
         private bool disposed = false;

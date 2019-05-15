@@ -42,6 +42,6 @@ namespace Schoolegister.Model
 
         [ForeignKey("ScheduleID")]
         public virtual Schedule Schedule { get; set; }
-        public int ScheduleID { get; set; }
+        public int? ScheduleID { get; set; }
     }
 }

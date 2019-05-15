@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Schoolegister.Model;
 using System.Data.Entity;
+using System.Diagnostics;
 
 namespace Schoolegister.Repository
 {
@@ -48,7 +49,8 @@ namespace Schoolegister.Repository
 
         public void Update(Employee obj)
         {
-            context.Entry(obj).State = EntityState.Modified;
+            var employee = context.Employees.Find(obj.Id);
+            context.Entry(employee).CurrentValues.SetValues(obj);
         }
 
         #region Dispose

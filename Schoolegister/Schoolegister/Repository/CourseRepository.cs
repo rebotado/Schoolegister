@@ -51,7 +51,8 @@ namespace Schoolegister.Repository
 
         public void Update(Course obj)
         {
-            context.Entry(obj).State = System.Data.Entity.EntityState.Modified;
+            var course = context.Courses.Find(obj.Id);
+            context.Entry(course).CurrentValues.SetValues(obj);
         }
 
         #region Dispose

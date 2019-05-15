@@ -45,7 +45,8 @@ namespace Schoolegister.Repository
 
         public void Update(Schedule obj)
         {
-            context.Entry(obj).State = System.Data.Entity.EntityState.Modified;
+            var schedule = context.Schedules.Find(obj.Id);
+            context.Entry(schedule).CurrentValues.SetValues(obj);
         }
 
         #region Dispose

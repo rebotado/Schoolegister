@@ -25,6 +25,9 @@ namespace Schoolegister.View
         public event EventHandler Course_StudentAdded;
         public event EventHandler Course_CourseAdded;
         public event EventHandler Course_CourseChanged;
+        public event EventHandler Employee_Modified;
+        public event EventHandler Employee_Deleted;
+        public event EventHandler Employee_Selected;
 
         public AdminView(User userLogged)
         {
@@ -58,6 +61,70 @@ namespace Schoolegister.View
 
         public string Course_CourseCode { get { return courseCodeBox.Text; } }
 
+        public string Employee_Salary
+        {
+            get { return employee_Salary.Text; }
+            set { employee_Salary.Text = value; }
+        }
+        public int Employee_Bank
+        {
+            get { return Convert.ToInt32(employee_Bank.Text); }
+            set { employee_Bank.Text = Convert.ToString(value); }
+        }
+        public string Employee_BankAccount
+        {
+            get { return employee_BankAccount.Text; }
+            set { employee_BankAccount.Text = value; }
+        }
+        public int Employee_Job
+        {
+            get { return Convert.ToInt32(employee_Job.Text); }
+            set { employee_Job.Text = Convert.ToString(value); }
+        }
+        public string Employee_FirstName
+        {
+            get { return employee_FirstName.Text; }
+            set { employee_FirstName.Text = value; }
+        }
+        public string Employee_LastName
+        {
+            get { return employee_LastName.Text; }
+            set { employee_LastName.Text = value; }
+        }
+        public string Employee_BloodType
+        {
+            get { return employee_BloodType.Text; }
+            set { employee_BloodType.Text = value; }
+        }
+        public string Employee_PhoneNumber
+        {
+            get { return employee_PhoneNumber.Text; }
+            set { employee_PhoneNumber.Text = value; }
+        }
+        public string Employee_Curp
+        {
+            get { return employee_Curp.Text; }
+            set { employee_Curp.Text = value; }
+        }
+        public string Employee_BirthDate
+        {
+            get { return employee_BirthDate.Text; }
+            set { employee_BirthDate.Text = value; }
+        }
+
+        public string Employee_Address
+        {
+            get { return employee_Address.Text; }
+            set { employee_Address.Text = value; }
+        }
+        public string Employee_Email
+        {
+            get { return employee_Email.Text; }
+            set { employee_Email.Text = value; }
+        }
+        
+        public int Employee_Id { get { return (int)employee_EmployeeGrid.SelectedRows[0].Cells[0].Value; } }
+
         private void AdminView_Load(object sender, EventArgs e)
         {
             registerTabControl.HideTab(registerTabPages[1]);
@@ -87,6 +154,27 @@ namespace Schoolegister.View
         private void SelectedCourse_Changed(object sender, EventArgs e)
         {
             Course_CourseChanged(sender, e);
+        }
+
+        private void Employee_ModifyClick(object sender, EventArgs e)
+        {
+            Employee_Modified(sender, e);
+        }
+
+        private void Employee_SelectedChanged(object sender, EventArgs e)
+        {
+            Employee_Salary = employee_EmployeeGrid.SelectedRows[0].Cells[1].Value as string;
+            Employee_Bank = Convert.ToInt32(employee_EmployeeGrid.SelectedRows[0].Cells[2].Value);
+            Employee_BankAccount = employee_EmployeeGrid.SelectedRows[0].Cells[3].Value as string;
+            Employee_Job = Convert.ToInt32(employee_EmployeeGrid.SelectedRows[0].Cells[4].Value);
+            Employee_FirstName = employee_EmployeeGrid.SelectedRows[0].Cells[5].Value as string;
+            Employee_LastName = employee_EmployeeGrid.SelectedRows[0].Cells[6].Value as string;
+            Employee_BloodType = employee_EmployeeGrid.SelectedRows[0].Cells[7].Value as string;
+            Employee_PhoneNumber = employee_EmployeeGrid.SelectedRows[0].Cells[8].Value as string;
+            Employee_Curp = employee_EmployeeGrid.SelectedRows[0].Cells[9].Value as string;
+            Employee_BirthDate = employee_EmployeeGrid.SelectedRows[0].Cells[10].Value as string;
+            Employee_Address = employee_EmployeeGrid.SelectedRows[0].Cells[11].Value as string;
+            Employee_Email = employee_EmployeeGrid.SelectedRows[0].Cells[12].Value as string;
         }
 
         private void MainView_FormClosed(object sender, FormClosedEventArgs e)
@@ -153,11 +241,23 @@ namespace Schoolegister.View
         public void Course_LoadCourses(IEnumerable<Course> courses)
         {
             courseGrid.DataSource = courses.ToList();
+
+            courseGrid.Columns["Schedule"].Visible = false;
+            courseGrid.Columns["ScheduleID"].Visible = false;
+            courseGrid.Columns["ProfessorID"].Visible = false;
+            courseGrid.Columns["Students"].Visible = false;
         }
 
         public void Course_LoadStudents(IEnumerable<Student> students)
         {
             studentGrid.DataSource = students.ToList();
+
+            studentGrid.Columns["BloodType"].Visible = false;
+            studentGrid.Columns["PhoneNumber"].Visible = false;
+            studentGrid.Columns["Curp"].Visible = false;
+            studentGrid.Columns["BirthDate"].Visible = false;
+            studentGrid.Columns["Address"].Visible = false;
+            studentGrid.Columns["Email"].Visible = false;
         }
 
         public int Course_GetStudentID()
@@ -170,13 +270,37 @@ namespace Schoolegister.View
             return Course_CourseID;
         }
 
-        public Course GetCourse()
+        public Course Course_GetCourse()
         {
             return new Course
             {
                 Code = Course_CourseCode,
                 Name = Course_CourseName
             };
+        }
+
+        public Employee Employee_GetEmployee()
+        {
+            return new Employee
+            {
+                Id = Employee_Id,
+                FirstName = Employee_FirstName,
+                LastName = Employee_LastName,
+                Curp = Employee_Curp,
+                BirthDate = Employee_BirthDate,
+                Address = Employee_Address,
+                Email = Employee_Email,
+                Bank = Employee_Bank,
+                BankAccount = Employee_BankAccount,
+                BloodType = Employee_BloodType,
+                PhoneNumber = Employee_PhoneNumber,
+                Job = Employee_Job,
+                Salary = Employee_Salary
+            };
+        }
+        public void Employee_LoadEmployees(IEnumerable<Employee> employees)
+        {
+            employee_EmployeeGrid.DataSource = employees.ToList();
         }
     }
 }

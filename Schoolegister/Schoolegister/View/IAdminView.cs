@@ -35,9 +35,34 @@ namespace Schoolegister.View
         string Course_CourseName { get; }
         string Course_CourseCode { get; }
 
-        Course GetCourse();
+        Course Course_GetCourse();
 
         #endregion CourseTab
+        #region EmployeeTab
+
+        event EventHandler Employee_Modified;
+        event EventHandler Employee_Deleted;
+        event EventHandler Employee_Selected;
+
+        int Employee_Id { get; }
+        string Employee_Salary { get; set; }
+        int Employee_Bank { get; set; }
+        string Employee_BankAccount { get; set; }
+        int Employee_Job { get; set; }
+        string Employee_FirstName { get; set; }
+        string Employee_LastName { get; set; }
+        string Employee_BloodType { get; set; }
+        string Employee_PhoneNumber { get; set; }
+        string Employee_Curp { get; set; }
+        string Employee_BirthDate { get; set; }
+        string Employee_Address { get; set; }
+        string Employee_Email { get; set; }
+
+        Employee Employee_GetEmployee();
+        void Employee_LoadEmployees(IEnumerable<Employee> employees);
+
+        #endregion EmployeeTab
+
 
 
 
