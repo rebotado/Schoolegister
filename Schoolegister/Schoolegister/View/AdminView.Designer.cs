@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -40,9 +43,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
             this.adminTabControl = new MetroFramework.Controls.MetroTabControl();
             this.registerPage = new MetroFramework.Controls.MetroTabPage();
             this.registerTabControl = new MetroFramework.Controls.MetroTabControl();
@@ -131,7 +131,7 @@
             this.employee_EmployeeGrid = new MetroFramework.Controls.MetroGrid();
             this.studentsPage = new MetroFramework.Controls.MetroTabPage();
             this.professorsPage = new MetroFramework.Controls.MetroTabPage();
-            this.metroGrid1 = new MetroFramework.Controls.MetroGrid();
+            this.professor_ProfessorGrid = new MetroFramework.Controls.MetroGrid();
             this.employee_ModifyButton = new MetroFramework.Controls.MetroButton();
             this.student_studentGrid = new MetroFramework.Controls.MetroGrid();
             this.metroLabel36 = new MetroFramework.Controls.MetroLabel();
@@ -153,6 +153,33 @@
             this.student_ModifyButton = new MetroFramework.Controls.MetroButton();
             this.student_IdBox = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel44 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel45 = new MetroFramework.Controls.MetroLabel();
+            this.professor_FirstNameBox = new MetroFramework.Controls.MetroTextBox();
+            this.professor_LastNameBox = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel46 = new MetroFramework.Controls.MetroLabel();
+            this.professor_PhoneNumberBox = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel47 = new MetroFramework.Controls.MetroLabel();
+            this.professor_AddressBox = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel48 = new MetroFramework.Controls.MetroLabel();
+            this.professor_EmailBox = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel49 = new MetroFramework.Controls.MetroLabel();
+            this.professor_BirthDateBox = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel50 = new MetroFramework.Controls.MetroLabel();
+            this.professor_IdBox = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel51 = new MetroFramework.Controls.MetroLabel();
+            this.professor_CurpBox = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel52 = new MetroFramework.Controls.MetroLabel();
+            this.professor_JobBox = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel53 = new MetroFramework.Controls.MetroLabel();
+            this.professor_SalaryBox = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel54 = new MetroFramework.Controls.MetroLabel();
+            this.professor_BloodTypeBox = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel55 = new MetroFramework.Controls.MetroLabel();
+            this.professor_BankAccountBox = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel56 = new MetroFramework.Controls.MetroLabel();
+            this.professor_BankBox = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel57 = new MetroFramework.Controls.MetroLabel();
+            this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.adminTabControl.SuspendLayout();
             this.registerPage.SuspendLayout();
             this.registerTabControl.SuspendLayout();
@@ -168,7 +195,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.employee_EmployeeGrid)).BeginInit();
             this.studentsPage.SuspendLayout();
             this.professorsPage.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.professor_ProfessorGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.student_studentGrid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -181,7 +208,7 @@
             this.adminTabControl.Controls.Add(this.professorsPage);
             this.adminTabControl.Location = new System.Drawing.Point(11, 63);
             this.adminTabControl.Name = "adminTabControl";
-            this.adminTabControl.SelectedIndex = 3;
+            this.adminTabControl.SelectedIndex = 0;
             this.adminTabControl.Size = new System.Drawing.Size(1085, 573);
             this.adminTabControl.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.adminTabControl.Style = MetroFramework.MetroColorStyle.Green;
@@ -211,7 +238,7 @@
             this.registerTabControl.Controls.Add(this.registerPage3);
             this.registerTabControl.Location = new System.Drawing.Point(0, 0);
             this.registerTabControl.Name = "registerTabControl";
-            this.registerTabControl.SelectedIndex = 0;
+            this.registerTabControl.SelectedIndex = 2;
             this.registerTabControl.Size = new System.Drawing.Size(1074, 528);
             this.registerTabControl.TabIndex = 38;
             this.registerTabControl.UseSelectable = true;
@@ -461,6 +488,7 @@
             this.backButton1.TabIndex = 36;
             this.backButton1.Text = "Atras";
             this.backButton1.UseSelectable = true;
+            this.backButton1.Click += new System.EventHandler(this.BackButton_Click);
             // 
             // metroLabel3
             // 
@@ -692,6 +720,7 @@
             this.backButton2.TabIndex = 37;
             this.backButton2.Text = "Atras";
             this.backButton2.UseSelectable = true;
+            this.backButton2.Click += new System.EventHandler(this.BackButton_Click);
             // 
             // bankBox
             // 
@@ -1161,37 +1190,37 @@
             this.studentGrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.studentGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.studentGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle34.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle34.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle34.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle34.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.studentGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle34;
+            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle31.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle31.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.studentGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle31;
             this.studentGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle35.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle35.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle35.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.studentGrid.DefaultCellStyle = dataGridViewCellStyle35;
+            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle32.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.studentGrid.DefaultCellStyle = dataGridViewCellStyle32;
             this.studentGrid.EnableHeadersVisualStyles = false;
             this.studentGrid.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.studentGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.studentGrid.Location = new System.Drawing.Point(322, 64);
             this.studentGrid.Name = "studentGrid";
             this.studentGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle36.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle36.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle36.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle36.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.studentGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle36;
+            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle33.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle33.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle33.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle33.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.studentGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle33;
             this.studentGrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.studentGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.studentGrid.Size = new System.Drawing.Size(290, 449);
@@ -1213,37 +1242,37 @@
             this.courseGrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.courseGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.courseGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle37.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle37.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle37.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle37.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle37.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle37.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle37.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.courseGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle37;
+            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle34.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle34.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle34.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle34.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.courseGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle34;
             this.courseGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle38.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle38.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle38.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle38.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle38.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle38.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.courseGrid.DefaultCellStyle = dataGridViewCellStyle38;
+            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle35.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle35.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle35.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.courseGrid.DefaultCellStyle = dataGridViewCellStyle35;
             this.courseGrid.EnableHeadersVisualStyles = false;
             this.courseGrid.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.courseGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.courseGrid.Location = new System.Drawing.Point(8, 64);
             this.courseGrid.Name = "courseGrid";
             this.courseGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle39.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle39.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle39.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle39.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle39.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle39.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.courseGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle39;
+            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle36.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle36.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle36.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle36.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.courseGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle36;
             this.courseGrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.courseGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.courseGrid.Size = new System.Drawing.Size(280, 449);
@@ -1765,37 +1794,37 @@
             this.employee_EmployeeGrid.BackgroundColor = System.Drawing.Color.White;
             this.employee_EmployeeGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.employee_EmployeeGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle40.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle40.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle40.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle40.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle40.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle40.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle40.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.employee_EmployeeGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle40;
+            dataGridViewCellStyle37.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle37.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle37.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle37.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle37.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle37.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle37.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.employee_EmployeeGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle37;
             this.employee_EmployeeGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle41.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle41.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle41.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle41.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle41.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle41.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle41.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.employee_EmployeeGrid.DefaultCellStyle = dataGridViewCellStyle41;
+            dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle38.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle38.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle38.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle38.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle38.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle38.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.employee_EmployeeGrid.DefaultCellStyle = dataGridViewCellStyle38;
             this.employee_EmployeeGrid.EnableHeadersVisualStyles = false;
             this.employee_EmployeeGrid.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.employee_EmployeeGrid.GridColor = System.Drawing.Color.Ivory;
             this.employee_EmployeeGrid.Location = new System.Drawing.Point(17, 24);
             this.employee_EmployeeGrid.Name = "employee_EmployeeGrid";
             this.employee_EmployeeGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle42.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle42.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle42.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle42.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle42.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle42.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.employee_EmployeeGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle42;
+            dataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle39.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle39.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle39.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle39.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle39.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle39.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.employee_EmployeeGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle39;
             this.employee_EmployeeGrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.employee_EmployeeGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.employee_EmployeeGrid.Size = new System.Drawing.Size(455, 484);
@@ -1838,7 +1867,34 @@
             // 
             // professorsPage
             // 
-            this.professorsPage.Controls.Add(this.metroGrid1);
+            this.professorsPage.Controls.Add(this.metroButton1);
+            this.professorsPage.Controls.Add(this.professor_CurpBox);
+            this.professorsPage.Controls.Add(this.metroLabel52);
+            this.professorsPage.Controls.Add(this.professor_JobBox);
+            this.professorsPage.Controls.Add(this.metroLabel53);
+            this.professorsPage.Controls.Add(this.professor_SalaryBox);
+            this.professorsPage.Controls.Add(this.metroLabel54);
+            this.professorsPage.Controls.Add(this.professor_BloodTypeBox);
+            this.professorsPage.Controls.Add(this.metroLabel55);
+            this.professorsPage.Controls.Add(this.professor_BankAccountBox);
+            this.professorsPage.Controls.Add(this.metroLabel56);
+            this.professorsPage.Controls.Add(this.professor_BankBox);
+            this.professorsPage.Controls.Add(this.metroLabel57);
+            this.professorsPage.Controls.Add(this.professor_IdBox);
+            this.professorsPage.Controls.Add(this.metroLabel51);
+            this.professorsPage.Controls.Add(this.professor_BirthDateBox);
+            this.professorsPage.Controls.Add(this.metroLabel50);
+            this.professorsPage.Controls.Add(this.professor_EmailBox);
+            this.professorsPage.Controls.Add(this.metroLabel49);
+            this.professorsPage.Controls.Add(this.professor_AddressBox);
+            this.professorsPage.Controls.Add(this.metroLabel48);
+            this.professorsPage.Controls.Add(this.professor_PhoneNumberBox);
+            this.professorsPage.Controls.Add(this.metroLabel47);
+            this.professorsPage.Controls.Add(this.professor_LastNameBox);
+            this.professorsPage.Controls.Add(this.metroLabel46);
+            this.professorsPage.Controls.Add(this.professor_FirstNameBox);
+            this.professorsPage.Controls.Add(this.metroLabel45);
+            this.professorsPage.Controls.Add(this.professor_ProfessorGrid);
             this.professorsPage.HorizontalScrollbarBarColor = true;
             this.professorsPage.HorizontalScrollbarHighlightOnWheel = false;
             this.professorsPage.HorizontalScrollbarSize = 10;
@@ -1851,49 +1907,49 @@
             this.professorsPage.VerticalScrollbarHighlightOnWheel = false;
             this.professorsPage.VerticalScrollbarSize = 10;
             // 
-            // metroGrid1
+            // professor_ProfessorGrid
             // 
-            this.metroGrid1.AllowUserToResizeRows = false;
-            this.metroGrid1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            this.metroGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.metroGrid1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.metroGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle43.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle43.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle43.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle43.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle43.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle43.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle43.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.metroGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle43;
-            this.metroGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle44.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle44.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle44.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle44.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            dataGridViewCellStyle44.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle44.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle44.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.metroGrid1.DefaultCellStyle = dataGridViewCellStyle44;
-            this.metroGrid1.EnableHeadersVisualStyles = false;
-            this.metroGrid1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.metroGrid1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            this.metroGrid1.Location = new System.Drawing.Point(3, 3);
-            this.metroGrid1.Name = "metroGrid1";
-            this.metroGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle45.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle45.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle45.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle45.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle45.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle45.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle45.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.metroGrid1.RowHeadersDefaultCellStyle = dataGridViewCellStyle45;
-            this.metroGrid1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.metroGrid1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.metroGrid1.Size = new System.Drawing.Size(572, 516);
-            this.metroGrid1.TabIndex = 2;
-            this.metroGrid1.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.professor_ProfessorGrid.AllowUserToResizeRows = false;
+            this.professor_ProfessorGrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.professor_ProfessorGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.professor_ProfessorGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle40.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle40.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle40.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle40.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle40.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle40.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle40.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.professor_ProfessorGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle40;
+            this.professor_ProfessorGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle41.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle41.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle41.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle41.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle41.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle41.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle41.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.professor_ProfessorGrid.DefaultCellStyle = dataGridViewCellStyle41;
+            this.professor_ProfessorGrid.EnableHeadersVisualStyles = false;
+            this.professor_ProfessorGrid.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.professor_ProfessorGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.professor_ProfessorGrid.Location = new System.Drawing.Point(3, 39);
+            this.professor_ProfessorGrid.Name = "professor_ProfessorGrid";
+            this.professor_ProfessorGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle42.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle42.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle42.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle42.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle42.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle42.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.professor_ProfessorGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle42;
+            this.professor_ProfessorGrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.professor_ProfessorGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.professor_ProfessorGrid.Size = new System.Drawing.Size(476, 480);
+            this.professor_ProfessorGrid.TabIndex = 2;
+            this.professor_ProfessorGrid.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.professor_ProfessorGrid.Click += new System.EventHandler(this.Professor_ProfessorSelected);
             // 
             // employee_ModifyButton
             // 
@@ -1911,37 +1967,37 @@
             this.student_studentGrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.student_studentGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.student_studentGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle31.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle31.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.student_studentGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle31;
+            dataGridViewCellStyle43.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle43.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle43.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle43.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle43.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle43.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle43.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.student_studentGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle43;
             this.student_studentGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle32.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.student_studentGrid.DefaultCellStyle = dataGridViewCellStyle32;
+            dataGridViewCellStyle44.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle44.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle44.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle44.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle44.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle44.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle44.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.student_studentGrid.DefaultCellStyle = dataGridViewCellStyle44;
             this.student_studentGrid.EnableHeadersVisualStyles = false;
             this.student_studentGrid.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.student_studentGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.student_studentGrid.Location = new System.Drawing.Point(18, 45);
             this.student_studentGrid.Name = "student_studentGrid";
             this.student_studentGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle33.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle33.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle33.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle33.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.student_studentGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle33;
+            dataGridViewCellStyle45.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle45.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle45.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle45.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle45.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle45.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle45.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.student_studentGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle45;
             this.student_studentGrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.student_studentGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.student_studentGrid.Size = new System.Drawing.Size(426, 460);
@@ -2310,6 +2366,524 @@
             this.metroLabel44.TabIndex = 20;
             this.metroLabel44.Text = "Id";
             // 
+            // metroLabel45
+            // 
+            this.metroLabel45.AutoSize = true;
+            this.metroLabel45.Location = new System.Drawing.Point(535, 53);
+            this.metroLabel45.Name = "metroLabel45";
+            this.metroLabel45.Size = new System.Drawing.Size(64, 19);
+            this.metroLabel45.TabIndex = 3;
+            this.metroLabel45.Text = "Nombres";
+            // 
+            // professor_FirstNameBox
+            // 
+            // 
+            // 
+            // 
+            this.professor_FirstNameBox.CustomButton.Image = null;
+            this.professor_FirstNameBox.CustomButton.Location = new System.Drawing.Point(53, 1);
+            this.professor_FirstNameBox.CustomButton.Name = "";
+            this.professor_FirstNameBox.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.professor_FirstNameBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.professor_FirstNameBox.CustomButton.TabIndex = 1;
+            this.professor_FirstNameBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.professor_FirstNameBox.CustomButton.UseSelectable = true;
+            this.professor_FirstNameBox.CustomButton.Visible = false;
+            this.professor_FirstNameBox.Lines = new string[0];
+            this.professor_FirstNameBox.Location = new System.Drawing.Point(641, 53);
+            this.professor_FirstNameBox.MaxLength = 32767;
+            this.professor_FirstNameBox.Name = "professor_FirstNameBox";
+            this.professor_FirstNameBox.PasswordChar = '\0';
+            this.professor_FirstNameBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.professor_FirstNameBox.SelectedText = "";
+            this.professor_FirstNameBox.SelectionLength = 0;
+            this.professor_FirstNameBox.SelectionStart = 0;
+            this.professor_FirstNameBox.ShortcutsEnabled = true;
+            this.professor_FirstNameBox.Size = new System.Drawing.Size(75, 23);
+            this.professor_FirstNameBox.TabIndex = 4;
+            this.professor_FirstNameBox.UseSelectable = true;
+            this.professor_FirstNameBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.professor_FirstNameBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // professor_LastNameBox
+            // 
+            // 
+            // 
+            // 
+            this.professor_LastNameBox.CustomButton.Image = null;
+            this.professor_LastNameBox.CustomButton.Location = new System.Drawing.Point(53, 1);
+            this.professor_LastNameBox.CustomButton.Name = "";
+            this.professor_LastNameBox.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.professor_LastNameBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.professor_LastNameBox.CustomButton.TabIndex = 1;
+            this.professor_LastNameBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.professor_LastNameBox.CustomButton.UseSelectable = true;
+            this.professor_LastNameBox.CustomButton.Visible = false;
+            this.professor_LastNameBox.Lines = new string[0];
+            this.professor_LastNameBox.Location = new System.Drawing.Point(641, 92);
+            this.professor_LastNameBox.MaxLength = 32767;
+            this.professor_LastNameBox.Name = "professor_LastNameBox";
+            this.professor_LastNameBox.PasswordChar = '\0';
+            this.professor_LastNameBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.professor_LastNameBox.SelectedText = "";
+            this.professor_LastNameBox.SelectionLength = 0;
+            this.professor_LastNameBox.SelectionStart = 0;
+            this.professor_LastNameBox.ShortcutsEnabled = true;
+            this.professor_LastNameBox.Size = new System.Drawing.Size(75, 23);
+            this.professor_LastNameBox.TabIndex = 6;
+            this.professor_LastNameBox.UseSelectable = true;
+            this.professor_LastNameBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.professor_LastNameBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // metroLabel46
+            // 
+            this.metroLabel46.AutoSize = true;
+            this.metroLabel46.Location = new System.Drawing.Point(535, 92);
+            this.metroLabel46.Name = "metroLabel46";
+            this.metroLabel46.Size = new System.Drawing.Size(63, 19);
+            this.metroLabel46.TabIndex = 5;
+            this.metroLabel46.Text = "Apellidos";
+            // 
+            // professor_PhoneNumberBox
+            // 
+            // 
+            // 
+            // 
+            this.professor_PhoneNumberBox.CustomButton.Image = null;
+            this.professor_PhoneNumberBox.CustomButton.Location = new System.Drawing.Point(53, 1);
+            this.professor_PhoneNumberBox.CustomButton.Name = "";
+            this.professor_PhoneNumberBox.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.professor_PhoneNumberBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.professor_PhoneNumberBox.CustomButton.TabIndex = 1;
+            this.professor_PhoneNumberBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.professor_PhoneNumberBox.CustomButton.UseSelectable = true;
+            this.professor_PhoneNumberBox.CustomButton.Visible = false;
+            this.professor_PhoneNumberBox.Lines = new string[0];
+            this.professor_PhoneNumberBox.Location = new System.Drawing.Point(641, 133);
+            this.professor_PhoneNumberBox.MaxLength = 32767;
+            this.professor_PhoneNumberBox.Name = "professor_PhoneNumberBox";
+            this.professor_PhoneNumberBox.PasswordChar = '\0';
+            this.professor_PhoneNumberBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.professor_PhoneNumberBox.SelectedText = "";
+            this.professor_PhoneNumberBox.SelectionLength = 0;
+            this.professor_PhoneNumberBox.SelectionStart = 0;
+            this.professor_PhoneNumberBox.ShortcutsEnabled = true;
+            this.professor_PhoneNumberBox.Size = new System.Drawing.Size(75, 23);
+            this.professor_PhoneNumberBox.TabIndex = 8;
+            this.professor_PhoneNumberBox.UseSelectable = true;
+            this.professor_PhoneNumberBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.professor_PhoneNumberBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // metroLabel47
+            // 
+            this.metroLabel47.AutoSize = true;
+            this.metroLabel47.Location = new System.Drawing.Point(535, 133);
+            this.metroLabel47.Name = "metroLabel47";
+            this.metroLabel47.Size = new System.Drawing.Size(129, 19);
+            this.metroLabel47.TabIndex = 7;
+            this.metroLabel47.Text = "Numero de telefono";
+            // 
+            // professor_AddressBox
+            // 
+            // 
+            // 
+            // 
+            this.professor_AddressBox.CustomButton.Image = null;
+            this.professor_AddressBox.CustomButton.Location = new System.Drawing.Point(53, 1);
+            this.professor_AddressBox.CustomButton.Name = "";
+            this.professor_AddressBox.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.professor_AddressBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.professor_AddressBox.CustomButton.TabIndex = 1;
+            this.professor_AddressBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.professor_AddressBox.CustomButton.UseSelectable = true;
+            this.professor_AddressBox.CustomButton.Visible = false;
+            this.professor_AddressBox.Lines = new string[0];
+            this.professor_AddressBox.Location = new System.Drawing.Point(641, 173);
+            this.professor_AddressBox.MaxLength = 32767;
+            this.professor_AddressBox.Name = "professor_AddressBox";
+            this.professor_AddressBox.PasswordChar = '\0';
+            this.professor_AddressBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.professor_AddressBox.SelectedText = "";
+            this.professor_AddressBox.SelectionLength = 0;
+            this.professor_AddressBox.SelectionStart = 0;
+            this.professor_AddressBox.ShortcutsEnabled = true;
+            this.professor_AddressBox.Size = new System.Drawing.Size(75, 23);
+            this.professor_AddressBox.TabIndex = 10;
+            this.professor_AddressBox.UseSelectable = true;
+            this.professor_AddressBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.professor_AddressBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // metroLabel48
+            // 
+            this.metroLabel48.AutoSize = true;
+            this.metroLabel48.Location = new System.Drawing.Point(535, 173);
+            this.metroLabel48.Name = "metroLabel48";
+            this.metroLabel48.Size = new System.Drawing.Size(63, 19);
+            this.metroLabel48.TabIndex = 9;
+            this.metroLabel48.Text = "Direccion";
+            // 
+            // professor_EmailBox
+            // 
+            // 
+            // 
+            // 
+            this.professor_EmailBox.CustomButton.Image = null;
+            this.professor_EmailBox.CustomButton.Location = new System.Drawing.Point(53, 1);
+            this.professor_EmailBox.CustomButton.Name = "";
+            this.professor_EmailBox.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.professor_EmailBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.professor_EmailBox.CustomButton.TabIndex = 1;
+            this.professor_EmailBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.professor_EmailBox.CustomButton.UseSelectable = true;
+            this.professor_EmailBox.CustomButton.Visible = false;
+            this.professor_EmailBox.Lines = new string[0];
+            this.professor_EmailBox.Location = new System.Drawing.Point(641, 215);
+            this.professor_EmailBox.MaxLength = 32767;
+            this.professor_EmailBox.Name = "professor_EmailBox";
+            this.professor_EmailBox.PasswordChar = '\0';
+            this.professor_EmailBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.professor_EmailBox.SelectedText = "";
+            this.professor_EmailBox.SelectionLength = 0;
+            this.professor_EmailBox.SelectionStart = 0;
+            this.professor_EmailBox.ShortcutsEnabled = true;
+            this.professor_EmailBox.Size = new System.Drawing.Size(75, 23);
+            this.professor_EmailBox.TabIndex = 12;
+            this.professor_EmailBox.UseSelectable = true;
+            this.professor_EmailBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.professor_EmailBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // metroLabel49
+            // 
+            this.metroLabel49.AutoSize = true;
+            this.metroLabel49.Location = new System.Drawing.Point(535, 215);
+            this.metroLabel49.Name = "metroLabel49";
+            this.metroLabel49.Size = new System.Drawing.Size(41, 19);
+            this.metroLabel49.TabIndex = 11;
+            this.metroLabel49.Text = "Email";
+            // 
+            // professor_BirthDateBox
+            // 
+            // 
+            // 
+            // 
+            this.professor_BirthDateBox.CustomButton.Image = null;
+            this.professor_BirthDateBox.CustomButton.Location = new System.Drawing.Point(53, 1);
+            this.professor_BirthDateBox.CustomButton.Name = "";
+            this.professor_BirthDateBox.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.professor_BirthDateBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.professor_BirthDateBox.CustomButton.TabIndex = 1;
+            this.professor_BirthDateBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.professor_BirthDateBox.CustomButton.UseSelectable = true;
+            this.professor_BirthDateBox.CustomButton.Visible = false;
+            this.professor_BirthDateBox.Lines = new string[0];
+            this.professor_BirthDateBox.Location = new System.Drawing.Point(641, 258);
+            this.professor_BirthDateBox.MaxLength = 32767;
+            this.professor_BirthDateBox.Name = "professor_BirthDateBox";
+            this.professor_BirthDateBox.PasswordChar = '\0';
+            this.professor_BirthDateBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.professor_BirthDateBox.SelectedText = "";
+            this.professor_BirthDateBox.SelectionLength = 0;
+            this.professor_BirthDateBox.SelectionStart = 0;
+            this.professor_BirthDateBox.ShortcutsEnabled = true;
+            this.professor_BirthDateBox.Size = new System.Drawing.Size(75, 23);
+            this.professor_BirthDateBox.TabIndex = 14;
+            this.professor_BirthDateBox.UseSelectable = true;
+            this.professor_BirthDateBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.professor_BirthDateBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // metroLabel50
+            // 
+            this.metroLabel50.AutoSize = true;
+            this.metroLabel50.Location = new System.Drawing.Point(535, 258);
+            this.metroLabel50.Name = "metroLabel50";
+            this.metroLabel50.Size = new System.Drawing.Size(130, 19);
+            this.metroLabel50.TabIndex = 13;
+            this.metroLabel50.Text = "Fecha de nacimiento";
+            // 
+            // professor_IdBox
+            // 
+            // 
+            // 
+            // 
+            this.professor_IdBox.CustomButton.Image = null;
+            this.professor_IdBox.CustomButton.Location = new System.Drawing.Point(53, 1);
+            this.professor_IdBox.CustomButton.Name = "";
+            this.professor_IdBox.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.professor_IdBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.professor_IdBox.CustomButton.TabIndex = 1;
+            this.professor_IdBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.professor_IdBox.CustomButton.UseSelectable = true;
+            this.professor_IdBox.CustomButton.Visible = false;
+            this.professor_IdBox.Lines = new string[0];
+            this.professor_IdBox.Location = new System.Drawing.Point(889, 312);
+            this.professor_IdBox.MaxLength = 32767;
+            this.professor_IdBox.Name = "professor_IdBox";
+            this.professor_IdBox.PasswordChar = '\0';
+            this.professor_IdBox.ReadOnly = true;
+            this.professor_IdBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.professor_IdBox.SelectedText = "";
+            this.professor_IdBox.SelectionLength = 0;
+            this.professor_IdBox.SelectionStart = 0;
+            this.professor_IdBox.ShortcutsEnabled = true;
+            this.professor_IdBox.Size = new System.Drawing.Size(75, 23);
+            this.professor_IdBox.TabIndex = 16;
+            this.professor_IdBox.UseSelectable = true;
+            this.professor_IdBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.professor_IdBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // metroLabel51
+            // 
+            this.metroLabel51.AutoSize = true;
+            this.metroLabel51.Location = new System.Drawing.Point(783, 312);
+            this.metroLabel51.Name = "metroLabel51";
+            this.metroLabel51.Size = new System.Drawing.Size(20, 19);
+            this.metroLabel51.TabIndex = 15;
+            this.metroLabel51.Text = "Id";
+            // 
+            // professor_CurpBox
+            // 
+            // 
+            // 
+            // 
+            this.professor_CurpBox.CustomButton.Image = null;
+            this.professor_CurpBox.CustomButton.Location = new System.Drawing.Point(53, 1);
+            this.professor_CurpBox.CustomButton.Name = "";
+            this.professor_CurpBox.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.professor_CurpBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.professor_CurpBox.CustomButton.TabIndex = 1;
+            this.professor_CurpBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.professor_CurpBox.CustomButton.UseSelectable = true;
+            this.professor_CurpBox.CustomButton.Visible = false;
+            this.professor_CurpBox.Lines = new string[0];
+            this.professor_CurpBox.Location = new System.Drawing.Point(889, 258);
+            this.professor_CurpBox.MaxLength = 32767;
+            this.professor_CurpBox.Name = "professor_CurpBox";
+            this.professor_CurpBox.PasswordChar = '\0';
+            this.professor_CurpBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.professor_CurpBox.SelectedText = "";
+            this.professor_CurpBox.SelectionLength = 0;
+            this.professor_CurpBox.SelectionStart = 0;
+            this.professor_CurpBox.ShortcutsEnabled = true;
+            this.professor_CurpBox.Size = new System.Drawing.Size(75, 23);
+            this.professor_CurpBox.TabIndex = 28;
+            this.professor_CurpBox.UseSelectable = true;
+            this.professor_CurpBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.professor_CurpBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // metroLabel52
+            // 
+            this.metroLabel52.AutoSize = true;
+            this.metroLabel52.Location = new System.Drawing.Point(783, 258);
+            this.metroLabel52.Name = "metroLabel52";
+            this.metroLabel52.Size = new System.Drawing.Size(43, 19);
+            this.metroLabel52.TabIndex = 27;
+            this.metroLabel52.Text = "CURP";
+            // 
+            // professor_JobBox
+            // 
+            // 
+            // 
+            // 
+            this.professor_JobBox.CustomButton.Image = null;
+            this.professor_JobBox.CustomButton.Location = new System.Drawing.Point(53, 1);
+            this.professor_JobBox.CustomButton.Name = "";
+            this.professor_JobBox.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.professor_JobBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.professor_JobBox.CustomButton.TabIndex = 1;
+            this.professor_JobBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.professor_JobBox.CustomButton.UseSelectable = true;
+            this.professor_JobBox.CustomButton.Visible = false;
+            this.professor_JobBox.Lines = new string[0];
+            this.professor_JobBox.Location = new System.Drawing.Point(889, 215);
+            this.professor_JobBox.MaxLength = 32767;
+            this.professor_JobBox.Name = "professor_JobBox";
+            this.professor_JobBox.PasswordChar = '\0';
+            this.professor_JobBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.professor_JobBox.SelectedText = "";
+            this.professor_JobBox.SelectionLength = 0;
+            this.professor_JobBox.SelectionStart = 0;
+            this.professor_JobBox.ShortcutsEnabled = true;
+            this.professor_JobBox.Size = new System.Drawing.Size(75, 23);
+            this.professor_JobBox.TabIndex = 26;
+            this.professor_JobBox.UseSelectable = true;
+            this.professor_JobBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.professor_JobBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // metroLabel53
+            // 
+            this.metroLabel53.AutoSize = true;
+            this.metroLabel53.Location = new System.Drawing.Point(783, 215);
+            this.metroLabel53.Name = "metroLabel53";
+            this.metroLabel53.Size = new System.Drawing.Size(48, 19);
+            this.metroLabel53.TabIndex = 25;
+            this.metroLabel53.Text = "Puesto";
+            // 
+            // professor_SalaryBox
+            // 
+            // 
+            // 
+            // 
+            this.professor_SalaryBox.CustomButton.Image = null;
+            this.professor_SalaryBox.CustomButton.Location = new System.Drawing.Point(53, 1);
+            this.professor_SalaryBox.CustomButton.Name = "";
+            this.professor_SalaryBox.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.professor_SalaryBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.professor_SalaryBox.CustomButton.TabIndex = 1;
+            this.professor_SalaryBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.professor_SalaryBox.CustomButton.UseSelectable = true;
+            this.professor_SalaryBox.CustomButton.Visible = false;
+            this.professor_SalaryBox.Lines = new string[0];
+            this.professor_SalaryBox.Location = new System.Drawing.Point(889, 173);
+            this.professor_SalaryBox.MaxLength = 32767;
+            this.professor_SalaryBox.Name = "professor_SalaryBox";
+            this.professor_SalaryBox.PasswordChar = '\0';
+            this.professor_SalaryBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.professor_SalaryBox.SelectedText = "";
+            this.professor_SalaryBox.SelectionLength = 0;
+            this.professor_SalaryBox.SelectionStart = 0;
+            this.professor_SalaryBox.ShortcutsEnabled = true;
+            this.professor_SalaryBox.Size = new System.Drawing.Size(75, 23);
+            this.professor_SalaryBox.TabIndex = 24;
+            this.professor_SalaryBox.UseSelectable = true;
+            this.professor_SalaryBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.professor_SalaryBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // metroLabel54
+            // 
+            this.metroLabel54.AutoSize = true;
+            this.metroLabel54.Location = new System.Drawing.Point(783, 173);
+            this.metroLabel54.Name = "metroLabel54";
+            this.metroLabel54.Size = new System.Drawing.Size(49, 19);
+            this.metroLabel54.TabIndex = 23;
+            this.metroLabel54.Text = "Salario";
+            // 
+            // professor_BloodTypeBox
+            // 
+            // 
+            // 
+            // 
+            this.professor_BloodTypeBox.CustomButton.Image = null;
+            this.professor_BloodTypeBox.CustomButton.Location = new System.Drawing.Point(53, 1);
+            this.professor_BloodTypeBox.CustomButton.Name = "";
+            this.professor_BloodTypeBox.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.professor_BloodTypeBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.professor_BloodTypeBox.CustomButton.TabIndex = 1;
+            this.professor_BloodTypeBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.professor_BloodTypeBox.CustomButton.UseSelectable = true;
+            this.professor_BloodTypeBox.CustomButton.Visible = false;
+            this.professor_BloodTypeBox.Lines = new string[0];
+            this.professor_BloodTypeBox.Location = new System.Drawing.Point(889, 133);
+            this.professor_BloodTypeBox.MaxLength = 32767;
+            this.professor_BloodTypeBox.Name = "professor_BloodTypeBox";
+            this.professor_BloodTypeBox.PasswordChar = '\0';
+            this.professor_BloodTypeBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.professor_BloodTypeBox.SelectedText = "";
+            this.professor_BloodTypeBox.SelectionLength = 0;
+            this.professor_BloodTypeBox.SelectionStart = 0;
+            this.professor_BloodTypeBox.ShortcutsEnabled = true;
+            this.professor_BloodTypeBox.Size = new System.Drawing.Size(75, 23);
+            this.professor_BloodTypeBox.TabIndex = 22;
+            this.professor_BloodTypeBox.UseSelectable = true;
+            this.professor_BloodTypeBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.professor_BloodTypeBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // metroLabel55
+            // 
+            this.metroLabel55.AutoSize = true;
+            this.metroLabel55.Location = new System.Drawing.Point(783, 133);
+            this.metroLabel55.Name = "metroLabel55";
+            this.metroLabel55.Size = new System.Drawing.Size(97, 19);
+            this.metroLabel55.TabIndex = 21;
+            this.metroLabel55.Text = "Tipo de sangre";
+            // 
+            // professor_BankAccountBox
+            // 
+            // 
+            // 
+            // 
+            this.professor_BankAccountBox.CustomButton.Image = null;
+            this.professor_BankAccountBox.CustomButton.Location = new System.Drawing.Point(53, 1);
+            this.professor_BankAccountBox.CustomButton.Name = "";
+            this.professor_BankAccountBox.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.professor_BankAccountBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.professor_BankAccountBox.CustomButton.TabIndex = 1;
+            this.professor_BankAccountBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.professor_BankAccountBox.CustomButton.UseSelectable = true;
+            this.professor_BankAccountBox.CustomButton.Visible = false;
+            this.professor_BankAccountBox.Lines = new string[0];
+            this.professor_BankAccountBox.Location = new System.Drawing.Point(889, 92);
+            this.professor_BankAccountBox.MaxLength = 32767;
+            this.professor_BankAccountBox.Name = "professor_BankAccountBox";
+            this.professor_BankAccountBox.PasswordChar = '\0';
+            this.professor_BankAccountBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.professor_BankAccountBox.SelectedText = "";
+            this.professor_BankAccountBox.SelectionLength = 0;
+            this.professor_BankAccountBox.SelectionStart = 0;
+            this.professor_BankAccountBox.ShortcutsEnabled = true;
+            this.professor_BankAccountBox.Size = new System.Drawing.Size(75, 23);
+            this.professor_BankAccountBox.TabIndex = 20;
+            this.professor_BankAccountBox.UseSelectable = true;
+            this.professor_BankAccountBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.professor_BankAccountBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // metroLabel56
+            // 
+            this.metroLabel56.AutoSize = true;
+            this.metroLabel56.Location = new System.Drawing.Point(783, 92);
+            this.metroLabel56.Name = "metroLabel56";
+            this.metroLabel56.Size = new System.Drawing.Size(109, 19);
+            this.metroLabel56.TabIndex = 19;
+            this.metroLabel56.Text = "Cuenta de banco";
+            // 
+            // professor_BankBox
+            // 
+            // 
+            // 
+            // 
+            this.professor_BankBox.CustomButton.Image = null;
+            this.professor_BankBox.CustomButton.Location = new System.Drawing.Point(53, 1);
+            this.professor_BankBox.CustomButton.Name = "";
+            this.professor_BankBox.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.professor_BankBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.professor_BankBox.CustomButton.TabIndex = 1;
+            this.professor_BankBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.professor_BankBox.CustomButton.UseSelectable = true;
+            this.professor_BankBox.CustomButton.Visible = false;
+            this.professor_BankBox.Lines = new string[0];
+            this.professor_BankBox.Location = new System.Drawing.Point(889, 53);
+            this.professor_BankBox.MaxLength = 32767;
+            this.professor_BankBox.Name = "professor_BankBox";
+            this.professor_BankBox.PasswordChar = '\0';
+            this.professor_BankBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.professor_BankBox.SelectedText = "";
+            this.professor_BankBox.SelectionLength = 0;
+            this.professor_BankBox.SelectionStart = 0;
+            this.professor_BankBox.ShortcutsEnabled = true;
+            this.professor_BankBox.Size = new System.Drawing.Size(75, 23);
+            this.professor_BankBox.TabIndex = 18;
+            this.professor_BankBox.UseSelectable = true;
+            this.professor_BankBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.professor_BankBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // metroLabel57
+            // 
+            this.metroLabel57.AutoSize = true;
+            this.metroLabel57.Location = new System.Drawing.Point(783, 53);
+            this.metroLabel57.Name = "metroLabel57";
+            this.metroLabel57.Size = new System.Drawing.Size(45, 19);
+            this.metroLabel57.TabIndex = 17;
+            this.metroLabel57.Text = "Banco";
+            // 
+            // metroButton1
+            // 
+            this.metroButton1.Location = new System.Drawing.Point(570, 312);
+            this.metroButton1.Name = "metroButton1";
+            this.metroButton1.Size = new System.Drawing.Size(100, 23);
+            this.metroButton1.TabIndex = 29;
+            this.metroButton1.Text = "Modificar";
+            this.metroButton1.UseSelectable = true;
+            this.metroButton1.Click += new System.EventHandler(this.Professor_ProfessorModified);
+            // 
             // AdminView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2344,7 +2918,8 @@
             this.studentsPage.ResumeLayout(false);
             this.studentsPage.PerformLayout();
             this.professorsPage.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).EndInit();
+            this.professorsPage.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.professor_ProfessorGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.student_studentGrid)).EndInit();
             this.ResumeLayout(false);
 
@@ -2395,7 +2970,7 @@
         private MetroFramework.Controls.MetroTabPage registerPage1;
         private MetroFramework.Controls.MetroTabPage registerPage2;
         private MetroFramework.Controls.MetroTabPage registerPage3;
-        private MetroFramework.Controls.MetroGrid metroGrid1;
+        private MetroFramework.Controls.MetroGrid professor_ProfessorGrid;
         private MetroFramework.Controls.MetroLabel metroLabel16;
         private MetroFramework.Controls.MetroLabel metroLabel15;
         private MetroFramework.Controls.MetroComboBox metroComboBox2;
@@ -2462,5 +3037,32 @@
         private MetroFramework.Controls.MetroLabel metroLabel36;
         private MetroFramework.Controls.MetroTextBox student_IdBox;
         private MetroFramework.Controls.MetroLabel metroLabel44;
+        private MetroFramework.Controls.MetroTextBox professor_FirstNameBox;
+        private MetroFramework.Controls.MetroLabel metroLabel45;
+        private MetroFramework.Controls.MetroButton metroButton1;
+        private MetroFramework.Controls.MetroTextBox professor_CurpBox;
+        private MetroFramework.Controls.MetroLabel metroLabel52;
+        private MetroFramework.Controls.MetroTextBox professor_JobBox;
+        private MetroFramework.Controls.MetroLabel metroLabel53;
+        private MetroFramework.Controls.MetroTextBox professor_SalaryBox;
+        private MetroFramework.Controls.MetroLabel metroLabel54;
+        private MetroFramework.Controls.MetroTextBox professor_BloodTypeBox;
+        private MetroFramework.Controls.MetroLabel metroLabel55;
+        private MetroFramework.Controls.MetroTextBox professor_BankAccountBox;
+        private MetroFramework.Controls.MetroLabel metroLabel56;
+        private MetroFramework.Controls.MetroTextBox professor_BankBox;
+        private MetroFramework.Controls.MetroLabel metroLabel57;
+        private MetroFramework.Controls.MetroTextBox professor_IdBox;
+        private MetroFramework.Controls.MetroLabel metroLabel51;
+        private MetroFramework.Controls.MetroTextBox professor_BirthDateBox;
+        private MetroFramework.Controls.MetroLabel metroLabel50;
+        private MetroFramework.Controls.MetroTextBox professor_EmailBox;
+        private MetroFramework.Controls.MetroLabel metroLabel49;
+        private MetroFramework.Controls.MetroTextBox professor_AddressBox;
+        private MetroFramework.Controls.MetroLabel metroLabel48;
+        private MetroFramework.Controls.MetroTextBox professor_PhoneNumberBox;
+        private MetroFramework.Controls.MetroLabel metroLabel47;
+        private MetroFramework.Controls.MetroTextBox professor_LastNameBox;
+        private MetroFramework.Controls.MetroLabel metroLabel46;
     }
 }

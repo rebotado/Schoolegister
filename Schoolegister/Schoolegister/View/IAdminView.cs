@@ -82,11 +82,33 @@ namespace Schoolegister.View
 
 
         #endregion StudentTab
+        #region ProfessorTab
+
+        event EventHandler Professor_Modified;
+        event EventHandler Professor_Deleted;
+
+        int Professor_Id { get; set; }
+        string Professor_Salary { get; set; }
+        int Professor_Bank { get; set; }
+        string Professor_BankAccount { get; set; }
+        int Professor_Job { get; set; }
+        string Professor_FirstName { get; set; }
+        string Professor_LastName { get; set; }
+        string Professor_BloodType { get; set; }
+        string Professor_PhoneNumber { get; set; }
+        string Professor_Curp { get; set; }
+        string Professor_BirthDate { get; set; }
+        string Professor_Address { get; set; }
+        string Professor_Email { get; set; }
+
+        void Professor_LoadProfessors(IEnumerable<Professor> professors);
+        Professor Professor_GetProfessor()
+;
+        #endregion ProfessorTab
 
 
 
 
-        void LoadProfessors(IEnumerable<Professor> professors);
 
 
         #region IPerson
