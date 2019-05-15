@@ -9,7 +9,8 @@ namespace Schoolegister.Repository
     public interface IGenericRepository<T>: IDisposable where T: class
     {
         IEnumerable<T> GetAll();
-        T GetByID(T obj);
+        T GetByObj(T obj);
+        T GetByID(int id);
         void Add(T obj);
         void Update(T obj);
         void Delete(T obj);

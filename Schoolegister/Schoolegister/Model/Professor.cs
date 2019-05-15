@@ -11,12 +11,11 @@ namespace Schoolegister.Model
     [Table("Professors")]
     public class Professor : IEmployee
     {
-        private decimal salary;
 
         [Key]
         public int Id { get; set; }
         [Column("Salary")]
-        public string Salary { get => Convert.ToString(salary); set => salary = Convert.ToDecimal(value); }
+        public string Salary { get; set; }
         [Column("Bank")]
         public int Bank { get; set; }
         [Column("BankAccount")]

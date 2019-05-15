@@ -31,11 +31,14 @@ namespace Schoolegister.Repository
             return context.Professors.ToList();
         }
 
-        public Professor GetByID(Professor obj)
+        public Professor GetByObj(Professor obj)
         {
             return context.Professors.Find(obj.Id);
         }
-
+        public Professor GetByID(int id)
+        {
+            return context.Professors.Find(id);
+        }
         public void Save()
         {
             context.SaveChanges();

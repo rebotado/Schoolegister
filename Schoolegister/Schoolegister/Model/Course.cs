@@ -17,6 +17,8 @@ namespace Schoolegister.Model
         public string Name { get; set; }
         [Column("Code")]
         public string Code { get; set; }
+        [Column("TotalStudents")]
+        public int TotalStudents { get; set; }
 
         [ForeignKey("ScheduleID")]
         public virtual Schedule Schedule { get; set; }

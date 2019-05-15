@@ -32,6 +32,7 @@ namespace Schoolegister.Model
         public string Email { get; set; }
         #endregion INTERFACE
 
+
         [ForeignKey("UserID")]
         public virtual User User { get; set; }
         public int UserID { get; set; }

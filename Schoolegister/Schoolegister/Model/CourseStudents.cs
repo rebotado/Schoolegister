@@ -20,6 +20,6 @@ namespace Schoolegister.Model
         public int CourseID { get; set; }
         [ForeignKey("StudentID")]
         public virtual Student Student { get; set; }
-        public int SutdentID { get; set; }
+        public int StudentID { get; set; }
     }
 }

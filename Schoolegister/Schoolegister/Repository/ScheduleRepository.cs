@@ -29,9 +29,13 @@ namespace Schoolegister.Repository
             return context.Schedules.ToList();
         }
 
-        public Schedule GetByID(Schedule obj)
+        public Schedule GetByObj(Schedule obj)
         {
             return context.Schedules.Find(obj.Id);
+        }
+        public Schedule GetByID(int id)
+        {
+            return context.Schedules.Find(id);
         }
 
         public void Save()

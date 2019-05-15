@@ -31,9 +31,14 @@ namespace Schoolegister.Repository
             return context.Employees.ToList();
         }
 
-        public Employee GetByID(Employee obj)
+        public Employee GetByObj(Employee obj)
         {
             return context.Employees.Find(obj.Id);
+        }
+
+        public Employee GetByID(int id)
+        {
+            return context.Employees.Find(id);
         }
 
         public void Save()

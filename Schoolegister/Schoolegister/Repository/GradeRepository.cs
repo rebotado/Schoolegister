@@ -31,9 +31,14 @@ namespace Schoolegister.Repository
             return context.Grades.ToList();
         }
 
-        public Grade GetByID(Grade obj)
+        public Grade GetByObj(Grade obj)
         {
             return context.Grades.Find(obj.Id);
+        }
+
+        public Grade GetByID(int id)
+        {
+            return context.Grades.Find(id);
         }
 
         public void Save()

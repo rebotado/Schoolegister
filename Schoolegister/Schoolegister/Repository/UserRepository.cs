@@ -31,9 +31,13 @@ namespace Schoolegister.Repository
             return context.Users.ToList();
         }
 
-        public User GetByID(User obj)
+        public User GetByObj(User obj)
         {
             return context.Users.Find(obj.Id);
+        }
+        public User GetByID(int id)
+        {
+            return context.Users.Find(id);
         }
 
         public User GetByUser(User obj)

@@ -30,9 +30,18 @@ namespace Schoolegister.Repository
             return context.Courses.ToList();
         }
 
-        public Course GetByID(Course obj)
+        public Course GetByObj(Course obj)
         {
             return context.Courses.Find(obj.Id);
+        }
+        public Course GetByID(int id)
+        {
+            return context.Courses.Find(id);
+        }
+
+        public Course GetByCode(Course obj)
+        {
+            return context.Courses.Find(obj.Code);
         }
 
         public void Save()
@@ -64,6 +73,7 @@ namespace Schoolegister.Repository
             Dispose(true);
             GC.SuppressFinalize(this);
         }
+
         #endregion Dispose
     }
 }

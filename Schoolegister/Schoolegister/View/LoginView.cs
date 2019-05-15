@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MetroFramework.Forms;
 using Schoolegister.Model;
+using Schoolegister.Presenter;
 using System.Diagnostics;
 
 namespace Schoolegister.View
@@ -33,14 +34,32 @@ namespace Schoolegister.View
             LoginIn();
             if (LoginResult)
             {
-                var frm = new MainView(UserLogged);
-                frm.Show();
                 this.Hide();
+                LoginUser();
             }
             else
             {
                 MessageBox.Show("Usuario o contrase;a incorrectas");
             }
+        }
+        public void LoginUser()
+        {
+            switch (UserLogged.PermissionLevel)
+            {
+                case (int)PermissionLevel.Admin:
+                    var view = new AdminView(UserLogged);
+                    LoadMainForm(view);
+                    break;
+                case (int)PermissionLevel.Professor:
+                    break;
+                case (int)PermissionLevel.Student:
+                    break;
+            }
+        }
+        public void LoadMainForm(AdminView view)
+        {
+            var presenter = new AdminPresenter(view);
+            view.Show();
         }
         public User GetUser()
         {

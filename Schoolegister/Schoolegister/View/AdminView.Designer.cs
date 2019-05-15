@@ -1,6 +1,6 @@
 ﻿namespace Schoolegister.View
 {
-    partial class MainView
+    partial class AdminView
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.mainTabControl = new MetroFramework.Controls.MetroTabControl();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.adminTabControl = new MetroFramework.Controls.MetroTabControl();
             this.registerPage = new MetroFramework.Controls.MetroTabPage();
             this.registerTabControl = new MetroFramework.Controls.MetroTabControl();
             this.registerPage1 = new MetroFramework.Controls.MetroTabPage();
+            this.metroLabel16 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel15 = new MetroFramework.Controls.MetroLabel();
+            this.metroComboBox2 = new MetroFramework.Controls.MetroComboBox();
+            this.metroComboBox1 = new MetroFramework.Controls.MetroComboBox();
             this.passwordBox = new MetroFramework.Controls.MetroTextBox();
             this.usernameBox = new MetroFramework.Controls.MetroTextBox();
             this.nextButton1 = new MetroFramework.Controls.MetroButton();
@@ -68,33 +81,57 @@
             this.birthdateBox = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel14 = new MetroFramework.Controls.MetroLabel();
             this.coursesPage = new MetroFramework.Controls.MetroTabPage();
+            this.coursePanel = new MetroFramework.Controls.MetroPanel();
+            this.metroLabel23 = new MetroFramework.Controls.MetroLabel();
+            this.courseCodeBox = new MetroFramework.Controls.MetroTextBox();
+            this.newCourseButton = new MetroFramework.Controls.MetroButton();
+            this.metroLabel21 = new MetroFramework.Controls.MetroLabel();
+            this.courseNameBox = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel22 = new MetroFramework.Controls.MetroLabel();
+            this.studentPanel = new MetroFramework.Controls.MetroPanel();
+            this.studentToCourseButton = new MetroFramework.Controls.MetroButton();
+            this.metroLabel20 = new MetroFramework.Controls.MetroLabel();
+            this.studentCNBox = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel19 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel18 = new MetroFramework.Controls.MetroLabel();
+            this.studentGrid = new MetroFramework.Controls.MetroGrid();
+            this.metroLabel17 = new MetroFramework.Controls.MetroLabel();
+            this.courseGrid = new MetroFramework.Controls.MetroGrid();
             this.employeePage = new MetroFramework.Controls.MetroTabPage();
             this.studentsPage = new MetroFramework.Controls.MetroTabPage();
             this.professorsPage = new MetroFramework.Controls.MetroTabPage();
-            this.mainTabControl.SuspendLayout();
+            this.metroGrid1 = new MetroFramework.Controls.MetroGrid();
+            this.adminTabControl.SuspendLayout();
             this.registerPage.SuspendLayout();
             this.registerTabControl.SuspendLayout();
             this.registerPage1.SuspendLayout();
             this.registerPage2.SuspendLayout();
             this.registerPage3.SuspendLayout();
+            this.coursesPage.SuspendLayout();
+            this.coursePanel.SuspendLayout();
+            this.studentPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.studentGrid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.courseGrid)).BeginInit();
+            this.professorsPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).BeginInit();
             this.SuspendLayout();
             // 
-            // mainTabControl
+            // adminTabControl
             // 
-            this.mainTabControl.Controls.Add(this.registerPage);
-            this.mainTabControl.Controls.Add(this.coursesPage);
-            this.mainTabControl.Controls.Add(this.employeePage);
-            this.mainTabControl.Controls.Add(this.studentsPage);
-            this.mainTabControl.Controls.Add(this.professorsPage);
-            this.mainTabControl.Location = new System.Drawing.Point(11, 63);
-            this.mainTabControl.Name = "mainTabControl";
-            this.mainTabControl.SelectedIndex = 0;
-            this.mainTabControl.Size = new System.Drawing.Size(1085, 573);
-            this.mainTabControl.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
-            this.mainTabControl.Style = MetroFramework.MetroColorStyle.Green;
-            this.mainTabControl.TabIndex = 0;
-            this.mainTabControl.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.mainTabControl.UseSelectable = true;
+            this.adminTabControl.Controls.Add(this.registerPage);
+            this.adminTabControl.Controls.Add(this.coursesPage);
+            this.adminTabControl.Controls.Add(this.employeePage);
+            this.adminTabControl.Controls.Add(this.studentsPage);
+            this.adminTabControl.Controls.Add(this.professorsPage);
+            this.adminTabControl.Location = new System.Drawing.Point(11, 63);
+            this.adminTabControl.Name = "adminTabControl";
+            this.adminTabControl.SelectedIndex = 1;
+            this.adminTabControl.Size = new System.Drawing.Size(1085, 573);
+            this.adminTabControl.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
+            this.adminTabControl.Style = MetroFramework.MetroColorStyle.Green;
+            this.adminTabControl.TabIndex = 0;
+            this.adminTabControl.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.adminTabControl.UseSelectable = true;
             // 
             // registerPage
             // 
@@ -125,6 +162,10 @@
             // 
             // registerPage1
             // 
+            this.registerPage1.Controls.Add(this.metroLabel16);
+            this.registerPage1.Controls.Add(this.metroLabel15);
+            this.registerPage1.Controls.Add(this.metroComboBox2);
+            this.registerPage1.Controls.Add(this.metroComboBox1);
             this.registerPage1.Controls.Add(this.passwordBox);
             this.registerPage1.Controls.Add(this.usernameBox);
             this.registerPage1.Controls.Add(this.nextButton1);
@@ -141,6 +182,44 @@
             this.registerPage1.VerticalScrollbarBarColor = true;
             this.registerPage1.VerticalScrollbarHighlightOnWheel = false;
             this.registerPage1.VerticalScrollbarSize = 10;
+            // 
+            // metroLabel16
+            // 
+            this.metroLabel16.AutoSize = true;
+            this.metroLabel16.Location = new System.Drawing.Point(829, 230);
+            this.metroLabel16.Name = "metroLabel16";
+            this.metroLabel16.Size = new System.Drawing.Size(61, 19);
+            this.metroLabel16.TabIndex = 11;
+            this.metroLabel16.Text = "Permisos";
+            // 
+            // metroLabel15
+            // 
+            this.metroLabel15.AutoSize = true;
+            this.metroLabel15.Location = new System.Drawing.Point(812, 179);
+            this.metroLabel15.Name = "metroLabel15";
+            this.metroLabel15.Size = new System.Drawing.Size(100, 19);
+            this.metroLabel15.TabIndex = 10;
+            this.metroLabel15.Text = "Tipo de usuario";
+            // 
+            // metroComboBox2
+            // 
+            this.metroComboBox2.FormattingEnabled = true;
+            this.metroComboBox2.ItemHeight = 23;
+            this.metroComboBox2.Location = new System.Drawing.Point(673, 220);
+            this.metroComboBox2.Name = "metroComboBox2";
+            this.metroComboBox2.Size = new System.Drawing.Size(121, 29);
+            this.metroComboBox2.TabIndex = 9;
+            this.metroComboBox2.UseSelectable = true;
+            // 
+            // metroComboBox1
+            // 
+            this.metroComboBox1.FormattingEnabled = true;
+            this.metroComboBox1.ItemHeight = 23;
+            this.metroComboBox1.Location = new System.Drawing.Point(673, 175);
+            this.metroComboBox1.Name = "metroComboBox1";
+            this.metroComboBox1.Size = new System.Drawing.Size(121, 29);
+            this.metroComboBox1.TabIndex = 8;
+            this.metroComboBox1.UseSelectable = true;
             // 
             // passwordBox
             // 
@@ -596,6 +675,7 @@
             this.registerButton.TabIndex = 35;
             this.registerButton.Text = "Registrar";
             this.registerButton.UseSelectable = true;
+            this.registerButton.Click += new System.EventHandler(this.RegisterProfessor_Click);
             // 
             // bankaccountBox
             // 
@@ -799,6 +879,12 @@
             // 
             // coursesPage
             // 
+            this.coursesPage.Controls.Add(this.coursePanel);
+            this.coursesPage.Controls.Add(this.studentPanel);
+            this.coursesPage.Controls.Add(this.metroLabel18);
+            this.coursesPage.Controls.Add(this.studentGrid);
+            this.coursesPage.Controls.Add(this.metroLabel17);
+            this.coursesPage.Controls.Add(this.courseGrid);
             this.coursesPage.HorizontalScrollbarBarColor = true;
             this.coursesPage.HorizontalScrollbarHighlightOnWheel = false;
             this.coursesPage.HorizontalScrollbarSize = 10;
@@ -810,6 +896,304 @@
             this.coursesPage.VerticalScrollbarBarColor = true;
             this.coursesPage.VerticalScrollbarHighlightOnWheel = false;
             this.coursesPage.VerticalScrollbarSize = 10;
+            // 
+            // coursePanel
+            // 
+            this.coursePanel.Controls.Add(this.metroLabel23);
+            this.coursePanel.Controls.Add(this.courseCodeBox);
+            this.coursePanel.Controls.Add(this.newCourseButton);
+            this.coursePanel.Controls.Add(this.metroLabel21);
+            this.coursePanel.Controls.Add(this.courseNameBox);
+            this.coursePanel.Controls.Add(this.metroLabel22);
+            this.coursePanel.HorizontalScrollbarBarColor = true;
+            this.coursePanel.HorizontalScrollbarHighlightOnWheel = false;
+            this.coursePanel.HorizontalScrollbarSize = 10;
+            this.coursePanel.Location = new System.Drawing.Point(668, 238);
+            this.coursePanel.Name = "coursePanel";
+            this.coursePanel.Size = new System.Drawing.Size(346, 191);
+            this.coursePanel.TabIndex = 7;
+            this.coursePanel.VerticalScrollbarBarColor = true;
+            this.coursePanel.VerticalScrollbarHighlightOnWheel = false;
+            this.coursePanel.VerticalScrollbarSize = 10;
+            // 
+            // metroLabel23
+            // 
+            this.metroLabel23.AutoSize = true;
+            this.metroLabel23.Location = new System.Drawing.Point(19, 87);
+            this.metroLabel23.Name = "metroLabel23";
+            this.metroLabel23.Size = new System.Drawing.Size(53, 19);
+            this.metroLabel23.TabIndex = 7;
+            this.metroLabel23.Text = "Codigo";
+            // 
+            // courseCodeBox
+            // 
+            // 
+            // 
+            // 
+            this.courseCodeBox.CustomButton.Image = null;
+            this.courseCodeBox.CustomButton.Location = new System.Drawing.Point(96, 1);
+            this.courseCodeBox.CustomButton.Name = "";
+            this.courseCodeBox.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.courseCodeBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.courseCodeBox.CustomButton.TabIndex = 1;
+            this.courseCodeBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.courseCodeBox.CustomButton.UseSelectable = true;
+            this.courseCodeBox.CustomButton.Visible = false;
+            this.courseCodeBox.Lines = new string[0];
+            this.courseCodeBox.Location = new System.Drawing.Point(149, 87);
+            this.courseCodeBox.MaxLength = 32767;
+            this.courseCodeBox.Name = "courseCodeBox";
+            this.courseCodeBox.PasswordChar = '\0';
+            this.courseCodeBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.courseCodeBox.SelectedText = "";
+            this.courseCodeBox.SelectionLength = 0;
+            this.courseCodeBox.SelectionStart = 0;
+            this.courseCodeBox.ShortcutsEnabled = true;
+            this.courseCodeBox.Size = new System.Drawing.Size(118, 23);
+            this.courseCodeBox.TabIndex = 6;
+            this.courseCodeBox.UseSelectable = true;
+            this.courseCodeBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.courseCodeBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // newCourseButton
+            // 
+            this.newCourseButton.Location = new System.Drawing.Point(166, 130);
+            this.newCourseButton.Name = "newCourseButton";
+            this.newCourseButton.Size = new System.Drawing.Size(75, 23);
+            this.newCourseButton.TabIndex = 5;
+            this.newCourseButton.Text = "Agregar";
+            this.newCourseButton.UseSelectable = true;
+            this.newCourseButton.Click += new System.EventHandler(this.RegisterCourse_Click);
+            // 
+            // metroLabel21
+            // 
+            this.metroLabel21.AutoSize = true;
+            this.metroLabel21.Location = new System.Drawing.Point(19, 48);
+            this.metroLabel21.Name = "metroLabel21";
+            this.metroLabel21.Size = new System.Drawing.Size(116, 19);
+            this.metroLabel21.TabIndex = 4;
+            this.metroLabel21.Text = "Nombre del curso";
+            // 
+            // courseNameBox
+            // 
+            // 
+            // 
+            // 
+            this.courseNameBox.CustomButton.Image = null;
+            this.courseNameBox.CustomButton.Location = new System.Drawing.Point(96, 1);
+            this.courseNameBox.CustomButton.Name = "";
+            this.courseNameBox.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.courseNameBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.courseNameBox.CustomButton.TabIndex = 1;
+            this.courseNameBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.courseNameBox.CustomButton.UseSelectable = true;
+            this.courseNameBox.CustomButton.Visible = false;
+            this.courseNameBox.Lines = new string[0];
+            this.courseNameBox.Location = new System.Drawing.Point(149, 48);
+            this.courseNameBox.MaxLength = 32767;
+            this.courseNameBox.Name = "courseNameBox";
+            this.courseNameBox.PasswordChar = '\0';
+            this.courseNameBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.courseNameBox.SelectedText = "";
+            this.courseNameBox.SelectionLength = 0;
+            this.courseNameBox.SelectionStart = 0;
+            this.courseNameBox.ShortcutsEnabled = true;
+            this.courseNameBox.Size = new System.Drawing.Size(118, 23);
+            this.courseNameBox.TabIndex = 3;
+            this.courseNameBox.UseSelectable = true;
+            this.courseNameBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.courseNameBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // metroLabel22
+            // 
+            this.metroLabel22.AutoSize = true;
+            this.metroLabel22.Location = new System.Drawing.Point(14, 17);
+            this.metroLabel22.Name = "metroLabel22";
+            this.metroLabel22.Size = new System.Drawing.Size(96, 19);
+            this.metroLabel22.TabIndex = 2;
+            this.metroLabel22.Text = "Agregar Curso";
+            // 
+            // studentPanel
+            // 
+            this.studentPanel.Controls.Add(this.studentToCourseButton);
+            this.studentPanel.Controls.Add(this.metroLabel20);
+            this.studentPanel.Controls.Add(this.studentCNBox);
+            this.studentPanel.Controls.Add(this.metroLabel19);
+            this.studentPanel.HorizontalScrollbarBarColor = true;
+            this.studentPanel.HorizontalScrollbarHighlightOnWheel = false;
+            this.studentPanel.HorizontalScrollbarSize = 10;
+            this.studentPanel.Location = new System.Drawing.Point(668, 64);
+            this.studentPanel.Name = "studentPanel";
+            this.studentPanel.Size = new System.Drawing.Size(346, 144);
+            this.studentPanel.TabIndex = 6;
+            this.studentPanel.VerticalScrollbarBarColor = true;
+            this.studentPanel.VerticalScrollbarHighlightOnWheel = false;
+            this.studentPanel.VerticalScrollbarSize = 10;
+            // 
+            // studentToCourseButton
+            // 
+            this.studentToCourseButton.Location = new System.Drawing.Point(166, 91);
+            this.studentToCourseButton.Name = "studentToCourseButton";
+            this.studentToCourseButton.Size = new System.Drawing.Size(75, 23);
+            this.studentToCourseButton.TabIndex = 5;
+            this.studentToCourseButton.Text = "Agregar";
+            this.studentToCourseButton.UseSelectable = true;
+            this.studentToCourseButton.Click += new System.EventHandler(this.StudentAddedToCourse_Click);
+            // 
+            // metroLabel20
+            // 
+            this.metroLabel20.AutoSize = true;
+            this.metroLabel20.Location = new System.Drawing.Point(28, 48);
+            this.metroLabel20.Name = "metroLabel20";
+            this.metroLabel20.Size = new System.Drawing.Size(81, 19);
+            this.metroLabel20.TabIndex = 4;
+            this.metroLabel20.Text = "# de control";
+            // 
+            // studentCNBox
+            // 
+            // 
+            // 
+            // 
+            this.studentCNBox.CustomButton.Image = null;
+            this.studentCNBox.CustomButton.Location = new System.Drawing.Point(96, 1);
+            this.studentCNBox.CustomButton.Name = "";
+            this.studentCNBox.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.studentCNBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.studentCNBox.CustomButton.TabIndex = 1;
+            this.studentCNBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.studentCNBox.CustomButton.UseSelectable = true;
+            this.studentCNBox.CustomButton.Visible = false;
+            this.studentCNBox.Lines = new string[0];
+            this.studentCNBox.Location = new System.Drawing.Point(149, 48);
+            this.studentCNBox.MaxLength = 32767;
+            this.studentCNBox.Name = "studentCNBox";
+            this.studentCNBox.PasswordChar = '\0';
+            this.studentCNBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.studentCNBox.SelectedText = "";
+            this.studentCNBox.SelectionLength = 0;
+            this.studentCNBox.SelectionStart = 0;
+            this.studentCNBox.ShortcutsEnabled = true;
+            this.studentCNBox.Size = new System.Drawing.Size(118, 23);
+            this.studentCNBox.TabIndex = 3;
+            this.studentCNBox.UseSelectable = true;
+            this.studentCNBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.studentCNBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // metroLabel19
+            // 
+            this.metroLabel19.AutoSize = true;
+            this.metroLabel19.Location = new System.Drawing.Point(14, 11);
+            this.metroLabel19.Name = "metroLabel19";
+            this.metroLabel19.Size = new System.Drawing.Size(121, 19);
+            this.metroLabel19.TabIndex = 2;
+            this.metroLabel19.Text = "Agregar Estudiante";
+            // 
+            // metroLabel18
+            // 
+            this.metroLabel18.AutoSize = true;
+            this.metroLabel18.Location = new System.Drawing.Point(322, 31);
+            this.metroLabel18.Name = "metroLabel18";
+            this.metroLabel18.Size = new System.Drawing.Size(73, 19);
+            this.metroLabel18.TabIndex = 5;
+            this.metroLabel18.Text = "Estudiantes";
+            // 
+            // studentGrid
+            // 
+            this.studentGrid.AllowUserToResizeRows = false;
+            this.studentGrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.studentGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.studentGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.studentGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.studentGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.studentGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.studentGrid.DefaultCellStyle = dataGridViewCellStyle2;
+            this.studentGrid.EnableHeadersVisualStyles = false;
+            this.studentGrid.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.studentGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.studentGrid.Location = new System.Drawing.Point(322, 64);
+            this.studentGrid.Name = "studentGrid";
+            this.studentGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.studentGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.studentGrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.studentGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.studentGrid.Size = new System.Drawing.Size(290, 449);
+            this.studentGrid.TabIndex = 4;
+            this.studentGrid.Theme = MetroFramework.MetroThemeStyle.Light;
+            // 
+            // metroLabel17
+            // 
+            this.metroLabel17.AutoSize = true;
+            this.metroLabel17.Location = new System.Drawing.Point(8, 31);
+            this.metroLabel17.Name = "metroLabel17";
+            this.metroLabel17.Size = new System.Drawing.Size(48, 19);
+            this.metroLabel17.TabIndex = 3;
+            this.metroLabel17.Text = "Cursos";
+            // 
+            // courseGrid
+            // 
+            this.courseGrid.AllowUserToResizeRows = false;
+            this.courseGrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.courseGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.courseGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.courseGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.courseGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.courseGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.courseGrid.DefaultCellStyle = dataGridViewCellStyle5;
+            this.courseGrid.EnableHeadersVisualStyles = false;
+            this.courseGrid.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.courseGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.courseGrid.Location = new System.Drawing.Point(8, 64);
+            this.courseGrid.Name = "courseGrid";
+            this.courseGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.courseGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            this.courseGrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.courseGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.courseGrid.Size = new System.Drawing.Size(280, 449);
+            this.courseGrid.TabIndex = 2;
+            this.courseGrid.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.courseGrid.Click += new System.EventHandler(this.SelectedCourse_Changed);
             // 
             // employeePage
             // 
@@ -841,6 +1225,7 @@
             // 
             // professorsPage
             // 
+            this.professorsPage.Controls.Add(this.metroGrid1);
             this.professorsPage.HorizontalScrollbarBarColor = true;
             this.professorsPage.HorizontalScrollbarHighlightOnWheel = false;
             this.professorsPage.HorizontalScrollbarSize = 10;
@@ -853,18 +1238,62 @@
             this.professorsPage.VerticalScrollbarHighlightOnWheel = false;
             this.professorsPage.VerticalScrollbarSize = 10;
             // 
-            // MainView
+            // metroGrid1
+            // 
+            this.metroGrid1.AllowUserToResizeRows = false;
+            this.metroGrid1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            this.metroGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.metroGrid1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.metroGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.metroGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            this.metroGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.metroGrid1.DefaultCellStyle = dataGridViewCellStyle8;
+            this.metroGrid1.EnableHeadersVisualStyles = false;
+            this.metroGrid1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.metroGrid1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            this.metroGrid1.Location = new System.Drawing.Point(3, 3);
+            this.metroGrid1.Name = "metroGrid1";
+            this.metroGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.metroGrid1.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            this.metroGrid1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.metroGrid1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.metroGrid1.Size = new System.Drawing.Size(572, 516);
+            this.metroGrid1.TabIndex = 2;
+            this.metroGrid1.Theme = MetroFramework.MetroThemeStyle.Dark;
+            // 
+            // AdminView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1119, 659);
-            this.Controls.Add(this.mainTabControl);
-            this.Name = "MainView";
+            this.Controls.Add(this.adminTabControl);
+            this.Name = "AdminView";
             this.Text = "Schoolegister";
             this.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainView_FormClosed);
-            this.Load += new System.EventHandler(this.MainView_Load);
-            this.mainTabControl.ResumeLayout(false);
+            this.Load += new System.EventHandler(this.AdminView_Load);
+            this.adminTabControl.ResumeLayout(false);
             this.registerPage.ResumeLayout(false);
             this.registerTabControl.ResumeLayout(false);
             this.registerPage1.ResumeLayout(false);
@@ -873,13 +1302,23 @@
             this.registerPage2.PerformLayout();
             this.registerPage3.ResumeLayout(false);
             this.registerPage3.PerformLayout();
+            this.coursesPage.ResumeLayout(false);
+            this.coursesPage.PerformLayout();
+            this.coursePanel.ResumeLayout(false);
+            this.coursePanel.PerformLayout();
+            this.studentPanel.ResumeLayout(false);
+            this.studentPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.studentGrid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.courseGrid)).EndInit();
+            this.professorsPage.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private MetroFramework.Controls.MetroTabControl mainTabControl;
+        private MetroFramework.Controls.MetroTabControl adminTabControl;
         private MetroFramework.Controls.MetroTabPage coursesPage;
         private MetroFramework.Controls.MetroTabPage employeePage;
         private MetroFramework.Controls.MetroTabPage studentsPage;
@@ -922,5 +1361,26 @@
         private MetroFramework.Controls.MetroTabPage registerPage1;
         private MetroFramework.Controls.MetroTabPage registerPage2;
         private MetroFramework.Controls.MetroTabPage registerPage3;
+        private MetroFramework.Controls.MetroGrid metroGrid1;
+        private MetroFramework.Controls.MetroLabel metroLabel16;
+        private MetroFramework.Controls.MetroLabel metroLabel15;
+        private MetroFramework.Controls.MetroComboBox metroComboBox2;
+        private MetroFramework.Controls.MetroComboBox metroComboBox1;
+        private MetroFramework.Controls.MetroLabel metroLabel17;
+        private MetroFramework.Controls.MetroGrid courseGrid;
+        private MetroFramework.Controls.MetroPanel coursePanel;
+        private MetroFramework.Controls.MetroButton newCourseButton;
+        private MetroFramework.Controls.MetroLabel metroLabel21;
+        private MetroFramework.Controls.MetroTextBox courseNameBox;
+        private MetroFramework.Controls.MetroLabel metroLabel22;
+        private MetroFramework.Controls.MetroPanel studentPanel;
+        private MetroFramework.Controls.MetroButton studentToCourseButton;
+        private MetroFramework.Controls.MetroLabel metroLabel20;
+        private MetroFramework.Controls.MetroTextBox studentCNBox;
+        private MetroFramework.Controls.MetroLabel metroLabel19;
+        private MetroFramework.Controls.MetroLabel metroLabel18;
+        private MetroFramework.Controls.MetroGrid studentGrid;
+        private MetroFramework.Controls.MetroLabel metroLabel23;
+        private MetroFramework.Controls.MetroTextBox courseCodeBox;
     }
 }
