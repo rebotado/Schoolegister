@@ -62,6 +62,26 @@ namespace Schoolegister.View
         void Employee_LoadEmployees(IEnumerable<Employee> employees);
 
         #endregion EmployeeTab
+        #region StudentTab
+
+        event EventHandler Student_Modified;
+        event EventHandler Student_Deleted;
+
+        string Student_FirstName { get; set; }
+        string Student_LastName { get; set; }
+        string Student_Email { get; set; }
+        string Student_Address { get; set; }
+        string Student_Curp { get; set; }
+        string Student_BirthDate { get; set; }
+        string Student_BloodType { get; set; }
+        string Student_PhoneNumber { get; set; }
+        int Student_Id { get; set; }
+
+        void Student_LoadStudents(IEnumerable<Student> students);
+        Student Student_GetStudent();
+
+
+        #endregion StudentTab
 
 
 

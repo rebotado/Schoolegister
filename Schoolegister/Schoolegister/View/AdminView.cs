@@ -28,6 +28,8 @@ namespace Schoolegister.View
         public event EventHandler Employee_Modified;
         public event EventHandler Employee_Deleted;
         public event EventHandler Employee_Selected;
+        public event EventHandler Student_Modified;
+        public event EventHandler Student_Deleted;
 
         public AdminView(User userLogged)
         {
@@ -39,6 +41,7 @@ namespace Schoolegister.View
             registerTabPages.Add(2, registerPage3);
         }
 
+        #region RegisterTab
         public int UserType { get; set; }
         public string Username { get; set; }
         public string Password { get; set; }
@@ -54,13 +57,18 @@ namespace Schoolegister.View
         public string Bank { get; set; }
         public string BankAccount { get; set; }
         public string Job { get; set; }
+        #endregion RegisterTab
+
+        #region CourseTab
         public int Course_CourseID { get { return (int)courseGrid.SelectedRows[0].Cells[0].Value; } }
         public int Course_StudentID { get { return Convert.ToInt32(studentCNBox.Text); } }
 
         public string Course_CourseName { get { return courseNameBox.Text; } }
 
         public string Course_CourseCode { get { return courseCodeBox.Text; } }
+        #endregion CourseTab
 
+        #region EmployeeTab
         public string Employee_Salary
         {
             get { return employee_Salary.Text; }
@@ -122,8 +130,57 @@ namespace Schoolegister.View
             get { return employee_Email.Text; }
             set { employee_Email.Text = value; }
         }
-        
         public int Employee_Id { get { return (int)employee_EmployeeGrid.SelectedRows[0].Cells[0].Value; } }
+
+
+        #endregion EmployeeTab
+
+        public string Student_FirstName
+        {
+            get { return student_FirstNameBox.Text; }
+            set { student_FirstNameBox.Text = value; }
+        }
+        public string Student_LastName
+        {
+            get { return student_LastNameBox.Text; }
+            set { student_LastNameBox.Text = value; }
+        }
+        public string Student_Email
+        {
+            get { return student_EmailBox.Text; }
+            set { student_EmailBox.Text = value; }
+        }
+        public string Student_Address
+        {
+            get { return student_AddressBox.Text; }
+            set { student_AddressBox.Text = value; }
+        }
+        public string Student_Curp
+        {
+            get { return student_CurpBox.Text; }
+            set { student_CurpBox.Text = value; }
+        }
+        public string Student_BirthDate
+        {
+            get { return student_BirthDateBox.Text; }
+            set { student_BirthDateBox.Text = value; }
+        }
+        public string Student_BloodType
+        {
+            get { return student_BloodBox.Text; }
+            set { student_BloodBox.Text = value; }
+        }
+        public string Student_PhoneNumber
+        {
+            get { return student_PhoneNumberBox.Text; }
+            set { student_PhoneNumberBox.Text = value; }
+        }
+        public int Student_Id
+        {
+            get { return Convert.ToInt32(student_IdBox.Text); }
+            set { student_IdBox.Text = Convert.ToString(value); }
+        }
+
 
         private void AdminView_Load(object sender, EventArgs e)
         {
@@ -175,6 +232,30 @@ namespace Schoolegister.View
             Employee_BirthDate = employee_EmployeeGrid.SelectedRows[0].Cells[10].Value as string;
             Employee_Address = employee_EmployeeGrid.SelectedRows[0].Cells[11].Value as string;
             Employee_Email = employee_EmployeeGrid.SelectedRows[0].Cells[12].Value as string;
+        }
+
+        private void Student_SelectedChanged(object sender, EventArgs e)
+        {
+            Student_Id = (int)student_studentGrid.SelectedRows[0].Cells[0].Value;
+            Student_FirstName = student_studentGrid.SelectedRows[0].Cells[1].Value as string;
+            Student_LastName = student_studentGrid.SelectedRows[0].Cells[2].Value as string;
+            Student_BloodType = student_studentGrid.SelectedRows[0].Cells[3].Value as string;
+            Student_PhoneNumber = student_studentGrid.SelectedRows[0].Cells[4].Value as string;
+            Student_Curp = student_studentGrid.SelectedRows[0].Cells[5].Value as string;
+            Student_BirthDate = student_studentGrid.SelectedRows[0].Cells[6].Value as string;
+            Student_Address = student_studentGrid.SelectedRows[0].Cells[7].Value as string;
+            Student_Email = student_studentGrid.SelectedRows[0].Cells[8].Value as string;
+        }
+        public void Student_LoadStudents(IEnumerable<Student> students)
+        {
+            student_studentGrid.DataSource = students.ToList();
+
+            student_studentGrid.Columns["BloodType"].Visible = false;
+            student_studentGrid.Columns["PhoneNumber"].Visible = false;
+            student_studentGrid.Columns["Curp"].Visible = false;
+            student_studentGrid.Columns["BirthDate"].Visible = false;
+            student_studentGrid.Columns["Address"].Visible = false;
+            student_studentGrid.Columns["Email"].Visible = false;
         }
 
         private void MainView_FormClosed(object sender, FormClosedEventArgs e)
@@ -258,6 +339,8 @@ namespace Schoolegister.View
             studentGrid.Columns["BirthDate"].Visible = false;
             studentGrid.Columns["Address"].Visible = false;
             studentGrid.Columns["Email"].Visible = false;
+            studentGrid.Columns["UserID"].Visible = false;
+            studentGrid.Columns["Courses"].Visible = false;
         }
 
         public int Course_GetStudentID()
@@ -301,6 +384,28 @@ namespace Schoolegister.View
         public void Employee_LoadEmployees(IEnumerable<Employee> employees)
         {
             employee_EmployeeGrid.DataSource = employees.ToList();
+        }
+
+        public Student Student_GetStudent()
+        {
+            return new Student
+            {
+                Id = Student_Id,
+                FirstName = Student_FirstName,
+                LastName = Student_LastName,
+                BloodType = Student_BloodType,
+                PhoneNumber = Student_PhoneNumber,
+                Curp = Student_Curp,
+                BirthDate = Student_BirthDate,
+                Address = Student_Address,
+                Email = Student_Email
+            };
+        }
+
+
+        private void Student_ModifyClick(object sender, EventArgs e)
+        {
+            Student_Modified(sender, e);
         }
     }
 }

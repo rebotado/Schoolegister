@@ -38,9 +38,11 @@ namespace Schoolegister.Presenter
             view.Course_CourseChanged += Courses_LoadStudents;
             view.Course_StudentAdded += Courses_AddStudentToCourse;
             view.Employee_Modified += Employee_EmployeeModified;
+            view.Student_Modified += Student_StudentModified;
             LoadProfessors();
             Courses_LoadCourses();
             Employee_LoadEmployees();
+            Student_LoadStudents();
         }
         public void RegisterProfessor(object sender, EventArgs e)
         {
@@ -104,6 +106,21 @@ namespace Schoolegister.Presenter
             employeeRepository.Update(employee);
             employeeRepository.Save();
             Employee_LoadEmployees();
+        }
+
+        public void Student_LoadStudents()
+        {
+            var students = studentRepository.GetAll().ToList();
+            view.Student_LoadStudents(students);
+        }
+
+
+        public void Student_StudentModified(object sender, EventArgs e)
+        {
+            var student = view.Student_GetStudent();
+            studentRepository.Update(student);
+            studentRepository.Save();
+            Student_LoadStudents();
         }
     }
 }
