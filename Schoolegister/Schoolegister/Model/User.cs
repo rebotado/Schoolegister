@@ -11,9 +11,9 @@ namespace Schoolegister.Model
 {
     public enum PermissionLevel
     {
-        Admin = 1,
-        Professor = 2,
-        Student = 3
+        Admin = 0,
+        Professor = 1,
+        Student = 2
     }
 
 

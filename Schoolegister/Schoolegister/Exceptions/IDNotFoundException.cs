@@ -11,8 +11,8 @@ namespace Schoolegister.Exceptions
         public IDNotFoundException(string message) : base(message) { }
     }
 
-    public class StudentExistsOnList : Exception
+    public class ObjectExistsOnDB : Exception
     {
-        public StudentExistsOnList(string message) : base(message) { }
+        public ObjectExistsOnDB(string message) : base(message) { }
     }
 }

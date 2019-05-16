@@ -84,7 +84,7 @@
             this.passwordTextBox.Location = new System.Drawing.Point(303, 184);
             this.passwordTextBox.MaxLength = 32767;
             this.passwordTextBox.Name = "passwordTextBox";
-            this.passwordTextBox.PasswordChar = '\0';
+            this.passwordTextBox.PasswordChar = '*';
             this.passwordTextBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.passwordTextBox.SelectedText = "";
             this.passwordTextBox.SelectionLength = 0;

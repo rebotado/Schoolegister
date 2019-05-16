@@ -12,12 +12,15 @@ namespace Schoolegister.View
         #region RegisterTab
         event EventHandler RegisterEmployee;
         event EventHandler RegisterProfessor;
-        event EventHandler RegisteStudent;
+        event EventHandler RegisterStudent;
+        event EventHandler RegisterAdmin;
 
         int UserType { get; set; }
         Employee Register_GetEmployee();
         Professor Register_GetProfessor();
         Student Register_GetStudent();
+
+        User Register_GetUser();
         #endregion RegisterTab
         #region CourseTab
         event EventHandler Course_StudentAdded;
@@ -32,8 +35,8 @@ namespace Schoolegister.View
         int Course_GetStudentID();
         int Course_GetCourseID();
 
-        string Course_CourseName { get; }
-        string Course_CourseCode { get; }
+        string Course_CourseName { get; set; }
+        string Course_CourseCode { get; set; }
 
         Course Course_GetCourse();
 
@@ -106,9 +109,9 @@ namespace Schoolegister.View
 ;
         #endregion ProfessorTab
 
+        void OnRegisterClick();
 
-
-
+        void TestListCurse(IEnumerable<Course> courses);
 
 
         #region IPerson

@@ -22,13 +22,15 @@ namespace Schoolegister.View
 
         public event EventHandler RegisterEmployee;
         public event EventHandler RegisterProfessor;
-        public event EventHandler RegisteStudent;
+        public event EventHandler RegisterStudent;
+        public event EventHandler RegisterAdmin;
         public event EventHandler Course_StudentAdded;
         public event EventHandler Course_CourseAdded;
         public event EventHandler Course_CourseChanged;
         public event EventHandler Employee_Modified;
         public event EventHandler Employee_Deleted;
         public event EventHandler Employee_Selected;
+        public event EventHandler OnRegister;
 
 
 
@@ -39,7 +41,14 @@ namespace Schoolegister.View
             registerTabPages = new Dictionary<int, MetroTabPage>();
             registerTabPages.Add(0, registerPage1);
             registerTabPages.Add(1, registerPage2);
-            registerTabPages.Add(2, registerPage3);
+            registerTabPages.Add(2, registerPage3_Professor);
+        }
+
+        private void AdminView_Load(object sender, EventArgs e)
+        {
+            registerTabControl.HideTab(registerTabPages[1]);
+            registerTabControl.HideTab(registerTabPages[2]);
+            register_PermissionLevelCB.SelectedIndex = 0;
         }
 
         #region RegisterTab
@@ -60,13 +69,42 @@ namespace Schoolegister.View
         public string Job { get; set; }
 
 
-        private void RegisterProfessor_Click(object sender, EventArgs e)
+        private void Register_RegisterProfessorClick(object sender, EventArgs e)
         {
-            RegisterProfessor(sender, e);
+            try
+            {
+                RegisterProfessor?.Invoke(sender, e);
+            }
+            catch (ObjectExistsOnDB)
+            {
+                MessageBox.Show("El nombre de usuario ya existe");
+            }
+        }
+        private void Register_RegisterStudentClick(object sender, EventArgs e)
+        {
+            try
+            {
+                RegisterStudent?.Invoke(sender, e);
+            }
+            catch (ObjectExistsOnDB)
+            {
+                MessageBox.Show("El nombre de usuario ya existe");
+            }
+        }
+        private void Register_RegisterAdminClick(object sender, EventArgs e)
+        {
+            try
+            {
+                RegisterAdmin?.Invoke(sender, e);
+            }
+            catch (ObjectExistsOnDB)
+            {
+                MessageBox.Show("El nombre de usuario ya existe");
+            }
         }
         private void RegisterCourse_Click(object sender, EventArgs e)
         {
-            Course_CourseAdded(sender, e);
+            Course_CourseAdded?.Invoke(sender, e);
         }
 
         public Employee Register_GetEmployee()
@@ -108,14 +146,26 @@ namespace Schoolegister.View
         }
         public Student Register_GetStudent()
         {
-            return default(Student);
+            return new Student
+            {
+                FirstName = nameBox.Text,
+                LastName = lastNameBox.Text,
+                BloodType = bloodBox.Text,
+                PhoneNumber = phoneBox.Text,
+                Curp = curpBox.Text,
+                BirthDate = birthdateBox.Text,
+                Address = addressBox.Text,
+                Email = mailBox.Text,
+                User = Register_GetUser()
+            };
         }
         public User Register_GetUser()
         {
             return new User
             {
                 Username = usernameBox.Text,
-                Password = passwordBox.Text
+                Password = passwordBox.Text,
+                PermissionLevel = register_PermissionLevelCB.SelectedIndex
             };
         }
         #endregion RegisterTab
@@ -124,13 +174,23 @@ namespace Schoolegister.View
         public int Course_CourseID { get { return (int)courseGrid.SelectedRows[0].Cells[0].Value; } }
         public int Course_StudentID { get { return Convert.ToInt32(studentCNBox.Text); } }
 
-        public string Course_CourseName { get { return courseNameBox.Text; } }
+        public string Course_CourseName
+        {
+            get { return courseNameBox.Text; }
+            set { courseNameBox.Text = value; }
+        }
 
-        public string Course_CourseCode { get { return courseCodeBox.Text; } }
+        public string Course_CourseCode
+        {
+            get { return courseCodeBox.Text; }
+            set { courseCodeBox.Text = value; }
+        }
+
 
 
         public void Course_LoadCourses(IEnumerable<Course> courses)
         {
+
             courseGrid.DataSource = courses.ToList();
 
             courseGrid.Columns["Schedule"].Visible = false;
@@ -171,6 +231,22 @@ namespace Schoolegister.View
                 Name = Course_CourseName
             };
         }
+        private void StudentAddedToCourse_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Course_StudentAdded?.Invoke(sender, e);
+            }
+            catch (IDNotFoundException)
+            {
+                MessageBox.Show("No se encontre la ID especificada");
+            }
+            catch (ObjectExistsOnDB)
+            {
+                MessageBox.Show("El estudiante ya esta registrado en la clase");
+            }
+        }
+
         #endregion CourseTab
 
         #region EmployeeTab
@@ -336,21 +412,7 @@ namespace Schoolegister.View
             set { student_IdBox.Text = Convert.ToString(value); }
         }
 
-        private void StudentAddedToCourse_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                Course_StudentAdded?.Invoke(sender, e);
-            }
-            catch(IDNotFoundException)
-            {
-                MessageBox.Show("No se encontre la ID especificada");
-            }
-            catch(StudentExistsOnList)
-            {
-                MessageBox.Show("El estudiante ya esta registrado en la clase");
-            }
-        }
+
 
         private void Student_SelectedChanged(object sender, EventArgs e)
         {
@@ -477,10 +539,15 @@ namespace Schoolegister.View
 
         public void Professor_LoadProfessors(IEnumerable<Professor> professors)
         {
-            professor_ProfessorGrid.DataSource = professors.ToList();
+           professor_ProfessorGrid.DataSource = professors.ToList();
 
             professor_ProfessorGrid.Columns["UserID"].Visible = false;
             professor_ProfessorGrid.Columns["Courses"].Visible = false;
+        }
+
+        public void TestListCurse(IEnumerable<Course> courses)
+        {
+            professor_ProfessorGrid.DataSource = courses.ToList();
         }
 
         public Professor Professor_GetProfessor()
@@ -527,12 +594,6 @@ namespace Schoolegister.View
         #endregion ProfessorTab
 
 
-        private void AdminView_Load(object sender, EventArgs e)
-        {
-            registerTabControl.HideTab(registerTabPages[1]);
-            registerTabControl.HideTab(registerTabPages[2]);
-        }
-
         private void NextButton_Click(object sender, EventArgs e)
         {
             var currentTab = registerTabControl.SelectedTab as MetroTabPage;
@@ -564,10 +625,33 @@ namespace Schoolegister.View
             professor_ProfessorGrid.DataSource = professors.ToList();
         }
 
+        private void Register_PermissionLevelCB_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (register_PermissionLevelCB.SelectedIndex)
+            {
+                case (int)PermissionLevel.Admin:
+                    register_NextButton.Visible = false;
+                    register_RegisterAdminButton.Visible = true;
+                    break;
+                case (int)PermissionLevel.Professor:
+                    register_RegisterAdminButton.Visible = false;
+                    register_NextButton.Visible = true;
+                    registerStudentButton.Visible = false;
+                    register_ProfessorNextButton.Visible = true;
+                    break;
+                case (int)PermissionLevel.Student:
+                    register_RegisterAdminButton.Visible = false;
+                    register_NextButton.Visible = true;
+                    registerStudentButton.Visible = true;
+                    register_ProfessorNextButton.Visible = false;
+                    break;
+            }
+        }
 
-
-
-
-
+        public void OnRegisterClick()
+        {
+            MessageBox.Show("Registro Exitoso!");
+            this.Refresh();
+        }
     }
 }

@@ -36,7 +36,9 @@ namespace Schoolegister.Presenter
             gradeRepository = new GradeRepository();
             courseStudentsRepository = new CourseStudentsRepository();
             userRepository = new UserRepository();
-            view.RegisterProfessor += RegisterProfessor;
+            view.RegisterProfessor += Register_RegisterProfessor;
+            view.RegisterAdmin += Register_RegisterAdmin;
+            view.RegisterStudent += Register_RegisterStudent;
             view.Course_CourseAdded += Courses_AddCourse;
             view.Course_CourseChanged += Courses_LoadStudents;
             view.Course_StudentAdded += Courses_AddStudentToCourse;
@@ -48,12 +50,37 @@ namespace Schoolegister.Presenter
             Employee_LoadEmployees();
             Student_LoadStudents();
         }
-        public void RegisterProfessor(object sender, EventArgs e)
+        public void Register_RegisterProfessor(object sender, EventArgs e)
         {
             var professor = view.Register_GetProfessor();
+            if(userRepository.GetAll().Where(x => x.Username == professor.User.Username).Count() > 0)
+            {
+                throw new ObjectExistsOnDB("Username exists on DB");
+            }
             professorRepository.Add(professor);
             professorRepository.Save();
             Professor_LoadProfessors();
+        }
+        public void Register_RegisterStudent(object sender, EventArgs e)
+        {
+            var student = view.Register_GetStudent();
+            if(userRepository.GetAll().Where(x => x.Username == student.User.Username).Count() > 0)
+            {
+                throw new ObjectExistsOnDB("Username exists on DB");
+            }
+            studentRepository.Add(student);
+            studentRepository.Save();
+            Student_LoadStudents();
+        }
+        public void Register_RegisterAdmin(object sender, EventArgs e)
+        {
+            var user = view.Register_GetUser();
+            if(userRepository.GetAll().Where(x => x.Username == user.Username).Count() > 0)
+            {
+                throw new ObjectExistsOnDB("Username exists on DB");
+            }
+            userRepository.Add(user);
+            userRepository.Save();
         }
         public void Professor_LoadProfessors()
         {
@@ -72,29 +99,6 @@ namespace Schoolegister.Presenter
             view.Course_LoadStudents(students);
         }
 
-        public void Courses_AddStudentToCourse(object sender, EventArgs e)
-        {
-            var studentID = view.Course_GetStudentID();
-            var courseID = view.Course_GetCourseID();
-            if(studentRepository.GetByID(studentID) == null | courseRepository.GetByID(courseID) == null)
-            {
-                throw (new IDNotFoundException($"Id not found in database"));
-            }
-            else if(courseStudentsRepository.GetAll().Where(x => x.StudentID == studentID) != null)
-            {
-                throw (new StudentExistsOnList("Student already exists on list"));
-            }
-
-            var courseStudent = new CourseStudents
-            {
-                StudentID = studentID,
-                CourseID = courseID
-            };
-            courseStudentsRepository.Add(courseStudent);
-            courseStudentsRepository.Save();
-            Courses_LoadCourses();
-            Courses_LoadStudents(sender, e);
-        }
 
         public void Courses_AddCourse(object sender, EventArgs e)
         {
@@ -140,6 +144,46 @@ namespace Schoolegister.Presenter
             professorRepository.Update(professor);
             professorRepository.Save();
             Professor_LoadProfessors();
+        }
+
+
+        public void Courses_AddStudentToCourse(object sender, EventArgs e)
+        {
+            var studentID = view.Course_GetStudentID();
+            var courseID = view.Course_GetCourseID();
+            var student = studentRepository.GetByID(studentID);
+            var course = courseRepository.GetByID(courseID);
+            if ( student == null |  course == null)
+            {
+                throw (new IDNotFoundException($"Id not found in database"));
+            }
+            else if(courseStudentsRepository.GetAll().Where(x => x.StudentID == studentID).Where(x => x.CourseID == courseID).Count() > 0)
+            {
+                throw (new ObjectExistsOnDB("Student already exists on list"));
+            }
+            var courseStudent = new CourseStudents
+            {
+                StudentID = studentID,
+                CourseID = courseID
+            };
+            courseStudentsRepository.Add(courseStudent);
+            courseStudentsRepository.Save();
+            course.TotalStudents = course.Students.Count();
+            courseRepository.Update(course);
+            courseRepository.Save();
+            Courses_LoadCourses();
+            Courses_LoadStudents(sender, e);
+        }
+
+        public void TestList()
+        {
+            var courseIDs = courseStudentsRepository.GetAll().Where(x => x.StudentID == 1).Select(x => x.CourseID);
+            var courses = courseRepository.GetAll().Where(x => courseIDs.Contains(x.Id));
+            foreach(var x in courseIDs)
+            {
+                Debug.WriteLine("Course id"+x);
+            }
+            view.TestListCurse(courses);
         }
     }
 }
