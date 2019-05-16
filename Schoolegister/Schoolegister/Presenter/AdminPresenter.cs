@@ -7,9 +7,12 @@ using Schoolegister.View;
 using Schoolegister.Model;
 using System.Diagnostics;
 using Schoolegister.Repository;
+using Schoolegister.Exceptions;
 
 namespace Schoolegister.Presenter
 {
+
+
     public class AdminPresenter
     {
         private readonly IAdminView view;
@@ -73,7 +76,14 @@ namespace Schoolegister.Presenter
         {
             var studentID = view.Course_GetStudentID();
             var courseID = view.Course_GetCourseID();
-
+            if(studentRepository.GetByID(studentID) == null | courseRepository.GetByID(courseID) == null)
+            {
+                throw (new IDNotFoundException($"Id not found in database"));
+            }
+            else if(courseStudentsRepository.GetAll().Where(x => x.StudentID == studentID) != null)
+            {
+                throw (new StudentExistsOnList("Student already exists on list"));
+            }
 
             var courseStudent = new CourseStudents
             {

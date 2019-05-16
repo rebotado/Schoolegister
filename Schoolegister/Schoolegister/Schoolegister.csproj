@@ -79,6 +79,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Exceptions\IDNotFoundException.cs" />
     <Compile Include="Model\CourseStudents.cs" />
     <Compile Include="Model\Employee.cs" />
     <Compile Include="Model\Grade.cs" />

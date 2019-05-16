@@ -28,21 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.adminTabControl = new MetroFramework.Controls.MetroTabControl();
             this.registerPage = new MetroFramework.Controls.MetroTabPage();
             this.registerTabControl = new MetroFramework.Controls.MetroTabControl();
@@ -208,8 +208,8 @@
             this.adminTabControl.Controls.Add(this.professorsPage);
             this.adminTabControl.Location = new System.Drawing.Point(11, 63);
             this.adminTabControl.Name = "adminTabControl";
-            this.adminTabControl.SelectedIndex = 0;
-            this.adminTabControl.Size = new System.Drawing.Size(1085, 573);
+            this.adminTabControl.SelectedIndex = 4;
+            this.adminTabControl.Size = new System.Drawing.Size(1555, 745);
             this.adminTabControl.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.adminTabControl.Style = MetroFramework.MetroColorStyle.Green;
             this.adminTabControl.TabIndex = 0;
@@ -224,7 +224,7 @@
             this.registerPage.HorizontalScrollbarSize = 10;
             this.registerPage.Location = new System.Drawing.Point(4, 38);
             this.registerPage.Name = "registerPage";
-            this.registerPage.Size = new System.Drawing.Size(1077, 531);
+            this.registerPage.Size = new System.Drawing.Size(1547, 703);
             this.registerPage.TabIndex = 0;
             this.registerPage.Text = "Registrar";
             this.registerPage.VerticalScrollbarBarColor = true;
@@ -238,8 +238,8 @@
             this.registerTabControl.Controls.Add(this.registerPage3);
             this.registerTabControl.Location = new System.Drawing.Point(0, 0);
             this.registerTabControl.Name = "registerTabControl";
-            this.registerTabControl.SelectedIndex = 2;
-            this.registerTabControl.Size = new System.Drawing.Size(1074, 528);
+            this.registerTabControl.SelectedIndex = 0;
+            this.registerTabControl.Size = new System.Drawing.Size(1535, 700);
             this.registerTabControl.TabIndex = 38;
             this.registerTabControl.UseSelectable = true;
             // 
@@ -259,7 +259,7 @@
             this.registerPage1.HorizontalScrollbarSize = 10;
             this.registerPage1.Location = new System.Drawing.Point(4, 38);
             this.registerPage1.Name = "registerPage1";
-            this.registerPage1.Size = new System.Drawing.Size(1066, 486);
+            this.registerPage1.Size = new System.Drawing.Size(1527, 658);
             this.registerPage1.TabIndex = 0;
             this.registerPage1.Text = "tabPage1";
             this.registerPage1.VerticalScrollbarBarColor = true;
@@ -975,7 +975,7 @@
             this.coursesPage.HorizontalScrollbarSize = 10;
             this.coursesPage.Location = new System.Drawing.Point(4, 38);
             this.coursesPage.Name = "coursesPage";
-            this.coursesPage.Size = new System.Drawing.Size(1077, 531);
+            this.coursesPage.Size = new System.Drawing.Size(1547, 703);
             this.coursesPage.TabIndex = 1;
             this.coursesPage.Text = "Cursos";
             this.coursesPage.VerticalScrollbarBarColor = true;
@@ -994,9 +994,9 @@
             this.coursePanel.HorizontalScrollbarBarColor = true;
             this.coursePanel.HorizontalScrollbarHighlightOnWheel = false;
             this.coursePanel.HorizontalScrollbarSize = 10;
-            this.coursePanel.Location = new System.Drawing.Point(668, 238);
+            this.coursePanel.Location = new System.Drawing.Point(1082, 214);
             this.coursePanel.Name = "coursePanel";
-            this.coursePanel.Size = new System.Drawing.Size(346, 191);
+            this.coursePanel.Size = new System.Drawing.Size(346, 171);
             this.coursePanel.TabIndex = 7;
             this.coursePanel.VerticalScrollbarBarColor = true;
             this.coursePanel.VerticalScrollbarHighlightOnWheel = false;
@@ -1109,7 +1109,7 @@
             this.studentPanel.HorizontalScrollbarBarColor = true;
             this.studentPanel.HorizontalScrollbarHighlightOnWheel = false;
             this.studentPanel.HorizontalScrollbarSize = 10;
-            this.studentPanel.Location = new System.Drawing.Point(668, 64);
+            this.studentPanel.Location = new System.Drawing.Point(1082, 64);
             this.studentPanel.Name = "studentPanel";
             this.studentPanel.Size = new System.Drawing.Size(346, 144);
             this.studentPanel.TabIndex = 6;
@@ -1178,7 +1178,7 @@
             // metroLabel18
             // 
             this.metroLabel18.AutoSize = true;
-            this.metroLabel18.Location = new System.Drawing.Point(322, 31);
+            this.metroLabel18.Location = new System.Drawing.Point(550, 31);
             this.metroLabel18.Name = "metroLabel18";
             this.metroLabel18.Size = new System.Drawing.Size(73, 19);
             this.metroLabel18.TabIndex = 5;
@@ -1190,40 +1190,40 @@
             this.studentGrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.studentGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.studentGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle31.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle31.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.studentGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle31;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.studentGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.studentGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle32.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.studentGrid.DefaultCellStyle = dataGridViewCellStyle32;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.studentGrid.DefaultCellStyle = dataGridViewCellStyle2;
             this.studentGrid.EnableHeadersVisualStyles = false;
             this.studentGrid.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.studentGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.studentGrid.Location = new System.Drawing.Point(322, 64);
+            this.studentGrid.Location = new System.Drawing.Point(550, 64);
             this.studentGrid.Name = "studentGrid";
             this.studentGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle33.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle33.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle33.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle33.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.studentGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle33;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.studentGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.studentGrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.studentGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.studentGrid.Size = new System.Drawing.Size(290, 449);
+            this.studentGrid.Size = new System.Drawing.Size(515, 612);
             this.studentGrid.TabIndex = 4;
             this.studentGrid.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
@@ -1242,40 +1242,40 @@
             this.courseGrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.courseGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.courseGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle34.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle34.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle34.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle34.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.courseGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle34;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.courseGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.courseGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle35.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle35.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle35.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.courseGrid.DefaultCellStyle = dataGridViewCellStyle35;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.courseGrid.DefaultCellStyle = dataGridViewCellStyle5;
             this.courseGrid.EnableHeadersVisualStyles = false;
             this.courseGrid.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.courseGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.courseGrid.Location = new System.Drawing.Point(8, 64);
             this.courseGrid.Name = "courseGrid";
             this.courseGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle36.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle36.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle36.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle36.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.courseGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle36;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.courseGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.courseGrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.courseGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.courseGrid.Size = new System.Drawing.Size(280, 449);
+            this.courseGrid.Size = new System.Drawing.Size(510, 612);
             this.courseGrid.TabIndex = 2;
             this.courseGrid.Theme = MetroFramework.MetroThemeStyle.Light;
             this.courseGrid.Click += new System.EventHandler(this.SelectedCourse_Changed);
@@ -1313,7 +1313,7 @@
             this.employeePage.HorizontalScrollbarSize = 10;
             this.employeePage.Location = new System.Drawing.Point(4, 38);
             this.employeePage.Name = "employeePage";
-            this.employeePage.Size = new System.Drawing.Size(1077, 531);
+            this.employeePage.Size = new System.Drawing.Size(1547, 703);
             this.employeePage.TabIndex = 2;
             this.employeePage.Text = "Empleados";
             this.employeePage.VerticalScrollbarBarColor = true;
@@ -1335,7 +1335,7 @@
             this.employee_PhoneNumber.CustomButton.UseSelectable = true;
             this.employee_PhoneNumber.CustomButton.Visible = false;
             this.employee_PhoneNumber.Lines = new string[0];
-            this.employee_PhoneNumber.Location = new System.Drawing.Point(878, 157);
+            this.employee_PhoneNumber.Location = new System.Drawing.Point(1159, 147);
             this.employee_PhoneNumber.MaxLength = 32767;
             this.employee_PhoneNumber.Name = "employee_PhoneNumber";
             this.employee_PhoneNumber.PasswordChar = '\0';
@@ -1353,7 +1353,7 @@
             // metroLabel32
             // 
             this.metroLabel32.AutoSize = true;
-            this.metroLabel32.Location = new System.Drawing.Point(769, 161);
+            this.metroLabel32.Location = new System.Drawing.Point(1050, 151);
             this.metroLabel32.Name = "metroLabel32";
             this.metroLabel32.Size = new System.Drawing.Size(101, 19);
             this.metroLabel32.TabIndex = 25;
@@ -1374,7 +1374,7 @@
             this.employee_BloodType.CustomButton.UseSelectable = true;
             this.employee_BloodType.CustomButton.Visible = false;
             this.employee_BloodType.Lines = new string[0];
-            this.employee_BloodType.Location = new System.Drawing.Point(878, 114);
+            this.employee_BloodType.Location = new System.Drawing.Point(1159, 104);
             this.employee_BloodType.MaxLength = 32767;
             this.employee_BloodType.Name = "employee_BloodType";
             this.employee_BloodType.PasswordChar = '\0';
@@ -1392,7 +1392,7 @@
             // metroLabel33
             // 
             this.metroLabel33.AutoSize = true;
-            this.metroLabel33.Location = new System.Drawing.Point(769, 118);
+            this.metroLabel33.Location = new System.Drawing.Point(1050, 108);
             this.metroLabel33.Name = "metroLabel33";
             this.metroLabel33.Size = new System.Drawing.Size(97, 19);
             this.metroLabel33.TabIndex = 23;
@@ -1413,7 +1413,7 @@
             this.employee_BankAccount.CustomButton.UseSelectable = true;
             this.employee_BankAccount.CustomButton.Visible = false;
             this.employee_BankAccount.Lines = new string[0];
-            this.employee_BankAccount.Location = new System.Drawing.Point(878, 70);
+            this.employee_BankAccount.Location = new System.Drawing.Point(1159, 60);
             this.employee_BankAccount.MaxLength = 32767;
             this.employee_BankAccount.Name = "employee_BankAccount";
             this.employee_BankAccount.PasswordChar = '\0';
@@ -1431,7 +1431,7 @@
             // metroLabel34
             // 
             this.metroLabel34.AutoSize = true;
-            this.metroLabel34.Location = new System.Drawing.Point(769, 74);
+            this.metroLabel34.Location = new System.Drawing.Point(1050, 64);
             this.metroLabel34.Name = "metroLabel34";
             this.metroLabel34.Size = new System.Drawing.Size(109, 19);
             this.metroLabel34.TabIndex = 21;
@@ -1452,7 +1452,7 @@
             this.employee_Bank.CustomButton.UseSelectable = true;
             this.employee_Bank.CustomButton.Visible = false;
             this.employee_Bank.Lines = new string[0];
-            this.employee_Bank.Location = new System.Drawing.Point(878, 30);
+            this.employee_Bank.Location = new System.Drawing.Point(1159, 20);
             this.employee_Bank.MaxLength = 32767;
             this.employee_Bank.Name = "employee_Bank";
             this.employee_Bank.PasswordChar = '\0';
@@ -1470,7 +1470,7 @@
             // metroLabel35
             // 
             this.metroLabel35.AutoSize = true;
-            this.metroLabel35.Location = new System.Drawing.Point(769, 34);
+            this.metroLabel35.Location = new System.Drawing.Point(1050, 24);
             this.metroLabel35.Name = "metroLabel35";
             this.metroLabel35.Size = new System.Drawing.Size(45, 19);
             this.metroLabel35.TabIndex = 19;
@@ -1491,7 +1491,7 @@
             this.employee_Salary.CustomButton.UseSelectable = true;
             this.employee_Salary.CustomButton.Visible = false;
             this.employee_Salary.Lines = new string[0];
-            this.employee_Salary.Location = new System.Drawing.Point(878, 241);
+            this.employee_Salary.Location = new System.Drawing.Point(1159, 231);
             this.employee_Salary.MaxLength = 32767;
             this.employee_Salary.Name = "employee_Salary";
             this.employee_Salary.PasswordChar = '\0';
@@ -1509,7 +1509,7 @@
             // metroLabel28
             // 
             this.metroLabel28.AutoSize = true;
-            this.metroLabel28.Location = new System.Drawing.Point(769, 245);
+            this.metroLabel28.Location = new System.Drawing.Point(1050, 235);
             this.metroLabel28.Name = "metroLabel28";
             this.metroLabel28.Size = new System.Drawing.Size(49, 19);
             this.metroLabel28.TabIndex = 17;
@@ -1530,7 +1530,7 @@
             this.employee_Job.CustomButton.UseSelectable = true;
             this.employee_Job.CustomButton.Visible = false;
             this.employee_Job.Lines = new string[0];
-            this.employee_Job.Location = new System.Drawing.Point(878, 198);
+            this.employee_Job.Location = new System.Drawing.Point(1159, 188);
             this.employee_Job.MaxLength = 32767;
             this.employee_Job.Name = "employee_Job";
             this.employee_Job.PasswordChar = '\0';
@@ -1548,7 +1548,7 @@
             // metroLabel29
             // 
             this.metroLabel29.AutoSize = true;
-            this.metroLabel29.Location = new System.Drawing.Point(769, 202);
+            this.metroLabel29.Location = new System.Drawing.Point(1050, 192);
             this.metroLabel29.Name = "metroLabel29";
             this.metroLabel29.Size = new System.Drawing.Size(48, 19);
             this.metroLabel29.TabIndex = 15;
@@ -1569,7 +1569,7 @@
             this.employee_Email.CustomButton.UseSelectable = true;
             this.employee_Email.CustomButton.Visible = false;
             this.employee_Email.Lines = new string[0];
-            this.employee_Email.Location = new System.Drawing.Point(648, 238);
+            this.employee_Email.Location = new System.Drawing.Point(929, 228);
             this.employee_Email.MaxLength = 32767;
             this.employee_Email.Name = "employee_Email";
             this.employee_Email.PasswordChar = '\0';
@@ -1587,7 +1587,7 @@
             // metroLabel30
             // 
             this.metroLabel30.AutoSize = true;
-            this.metroLabel30.Location = new System.Drawing.Point(539, 242);
+            this.metroLabel30.Location = new System.Drawing.Point(820, 232);
             this.metroLabel30.Name = "metroLabel30";
             this.metroLabel30.Size = new System.Drawing.Size(41, 19);
             this.metroLabel30.TabIndex = 13;
@@ -1608,7 +1608,7 @@
             this.employee_Address.CustomButton.UseSelectable = true;
             this.employee_Address.CustomButton.Visible = false;
             this.employee_Address.Lines = new string[0];
-            this.employee_Address.Location = new System.Drawing.Point(648, 198);
+            this.employee_Address.Location = new System.Drawing.Point(929, 188);
             this.employee_Address.MaxLength = 32767;
             this.employee_Address.Name = "employee_Address";
             this.employee_Address.PasswordChar = '\0';
@@ -1626,7 +1626,7 @@
             // metroLabel31
             // 
             this.metroLabel31.AutoSize = true;
-            this.metroLabel31.Location = new System.Drawing.Point(539, 202);
+            this.metroLabel31.Location = new System.Drawing.Point(820, 192);
             this.metroLabel31.Name = "metroLabel31";
             this.metroLabel31.Size = new System.Drawing.Size(63, 19);
             this.metroLabel31.TabIndex = 11;
@@ -1647,7 +1647,7 @@
             this.employee_BirthDate.CustomButton.UseSelectable = true;
             this.employee_BirthDate.CustomButton.Visible = false;
             this.employee_BirthDate.Lines = new string[0];
-            this.employee_BirthDate.Location = new System.Drawing.Point(648, 157);
+            this.employee_BirthDate.Location = new System.Drawing.Point(929, 147);
             this.employee_BirthDate.MaxLength = 32767;
             this.employee_BirthDate.Name = "employee_BirthDate";
             this.employee_BirthDate.PasswordChar = '\0';
@@ -1665,7 +1665,7 @@
             // metroLabel27
             // 
             this.metroLabel27.AutoSize = true;
-            this.metroLabel27.Location = new System.Drawing.Point(539, 161);
+            this.metroLabel27.Location = new System.Drawing.Point(820, 151);
             this.metroLabel27.Name = "metroLabel27";
             this.metroLabel27.Size = new System.Drawing.Size(130, 19);
             this.metroLabel27.TabIndex = 9;
@@ -1686,7 +1686,7 @@
             this.employee_Curp.CustomButton.UseSelectable = true;
             this.employee_Curp.CustomButton.Visible = false;
             this.employee_Curp.Lines = new string[0];
-            this.employee_Curp.Location = new System.Drawing.Point(648, 114);
+            this.employee_Curp.Location = new System.Drawing.Point(929, 104);
             this.employee_Curp.MaxLength = 32767;
             this.employee_Curp.Name = "employee_Curp";
             this.employee_Curp.PasswordChar = '\0';
@@ -1704,7 +1704,7 @@
             // metroLabel26
             // 
             this.metroLabel26.AutoSize = true;
-            this.metroLabel26.Location = new System.Drawing.Point(539, 118);
+            this.metroLabel26.Location = new System.Drawing.Point(820, 108);
             this.metroLabel26.Name = "metroLabel26";
             this.metroLabel26.Size = new System.Drawing.Size(43, 19);
             this.metroLabel26.TabIndex = 7;
@@ -1725,7 +1725,7 @@
             this.employee_LastName.CustomButton.UseSelectable = true;
             this.employee_LastName.CustomButton.Visible = false;
             this.employee_LastName.Lines = new string[0];
-            this.employee_LastName.Location = new System.Drawing.Point(648, 70);
+            this.employee_LastName.Location = new System.Drawing.Point(929, 60);
             this.employee_LastName.MaxLength = 32767;
             this.employee_LastName.Name = "employee_LastName";
             this.employee_LastName.PasswordChar = '\0';
@@ -1743,7 +1743,7 @@
             // metroLabel25
             // 
             this.metroLabel25.AutoSize = true;
-            this.metroLabel25.Location = new System.Drawing.Point(539, 74);
+            this.metroLabel25.Location = new System.Drawing.Point(820, 64);
             this.metroLabel25.Name = "metroLabel25";
             this.metroLabel25.Size = new System.Drawing.Size(63, 19);
             this.metroLabel25.TabIndex = 5;
@@ -1764,7 +1764,7 @@
             this.employee_FirstName.CustomButton.UseSelectable = true;
             this.employee_FirstName.CustomButton.Visible = false;
             this.employee_FirstName.Lines = new string[0];
-            this.employee_FirstName.Location = new System.Drawing.Point(648, 30);
+            this.employee_FirstName.Location = new System.Drawing.Point(929, 20);
             this.employee_FirstName.MaxLength = 32767;
             this.employee_FirstName.Name = "employee_FirstName";
             this.employee_FirstName.PasswordChar = '\0';
@@ -1782,7 +1782,7 @@
             // metroLabel24
             // 
             this.metroLabel24.AutoSize = true;
-            this.metroLabel24.Location = new System.Drawing.Point(539, 34);
+            this.metroLabel24.Location = new System.Drawing.Point(820, 24);
             this.metroLabel24.Name = "metroLabel24";
             this.metroLabel24.Size = new System.Drawing.Size(64, 19);
             this.metroLabel24.TabIndex = 3;
@@ -1794,40 +1794,40 @@
             this.employee_EmployeeGrid.BackgroundColor = System.Drawing.Color.White;
             this.employee_EmployeeGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.employee_EmployeeGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle37.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle37.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle37.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle37.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle37.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle37.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle37.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.employee_EmployeeGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle37;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.employee_EmployeeGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.employee_EmployeeGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle38.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle38.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle38.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle38.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle38.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle38.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.employee_EmployeeGrid.DefaultCellStyle = dataGridViewCellStyle38;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.employee_EmployeeGrid.DefaultCellStyle = dataGridViewCellStyle8;
             this.employee_EmployeeGrid.EnableHeadersVisualStyles = false;
             this.employee_EmployeeGrid.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.employee_EmployeeGrid.GridColor = System.Drawing.Color.Ivory;
             this.employee_EmployeeGrid.Location = new System.Drawing.Point(17, 24);
             this.employee_EmployeeGrid.Name = "employee_EmployeeGrid";
             this.employee_EmployeeGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle39.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle39.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle39.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle39.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle39.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle39.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.employee_EmployeeGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle39;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.employee_EmployeeGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.employee_EmployeeGrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.employee_EmployeeGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.employee_EmployeeGrid.Size = new System.Drawing.Size(455, 484);
+            this.employee_EmployeeGrid.Size = new System.Drawing.Size(770, 484);
             this.employee_EmployeeGrid.TabIndex = 2;
             this.employee_EmployeeGrid.Click += new System.EventHandler(this.Employee_SelectedChanged);
             // 
@@ -1858,7 +1858,7 @@
             this.studentsPage.HorizontalScrollbarSize = 10;
             this.studentsPage.Location = new System.Drawing.Point(4, 38);
             this.studentsPage.Name = "studentsPage";
-            this.studentsPage.Size = new System.Drawing.Size(1077, 531);
+            this.studentsPage.Size = new System.Drawing.Size(1547, 703);
             this.studentsPage.TabIndex = 3;
             this.studentsPage.Text = "Estudiantes";
             this.studentsPage.VerticalScrollbarBarColor = true;
@@ -1900,7 +1900,7 @@
             this.professorsPage.HorizontalScrollbarSize = 10;
             this.professorsPage.Location = new System.Drawing.Point(4, 38);
             this.professorsPage.Name = "professorsPage";
-            this.professorsPage.Size = new System.Drawing.Size(1077, 531);
+            this.professorsPage.Size = new System.Drawing.Size(1547, 703);
             this.professorsPage.TabIndex = 4;
             this.professorsPage.Text = "Profesores";
             this.professorsPage.VerticalScrollbarBarColor = true;
@@ -1913,47 +1913,47 @@
             this.professor_ProfessorGrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.professor_ProfessorGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.professor_ProfessorGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle40.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle40.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle40.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle40.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle40.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle40.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle40.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.professor_ProfessorGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle40;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.professor_ProfessorGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
             this.professor_ProfessorGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle41.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle41.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle41.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle41.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle41.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle41.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle41.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.professor_ProfessorGrid.DefaultCellStyle = dataGridViewCellStyle41;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.professor_ProfessorGrid.DefaultCellStyle = dataGridViewCellStyle14;
             this.professor_ProfessorGrid.EnableHeadersVisualStyles = false;
             this.professor_ProfessorGrid.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.professor_ProfessorGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.professor_ProfessorGrid.Location = new System.Drawing.Point(3, 39);
             this.professor_ProfessorGrid.Name = "professor_ProfessorGrid";
             this.professor_ProfessorGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle42.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle42.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle42.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle42.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle42.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle42.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.professor_ProfessorGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle42;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.professor_ProfessorGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
             this.professor_ProfessorGrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.professor_ProfessorGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.professor_ProfessorGrid.Size = new System.Drawing.Size(476, 480);
+            this.professor_ProfessorGrid.Size = new System.Drawing.Size(644, 597);
             this.professor_ProfessorGrid.TabIndex = 2;
             this.professor_ProfessorGrid.Theme = MetroFramework.MetroThemeStyle.Light;
             this.professor_ProfessorGrid.Click += new System.EventHandler(this.Professor_ProfessorSelected);
             // 
             // employee_ModifyButton
             // 
-            this.employee_ModifyButton.Location = new System.Drawing.Point(714, 292);
+            this.employee_ModifyButton.Location = new System.Drawing.Point(995, 282);
             this.employee_ModifyButton.Name = "employee_ModifyButton";
             this.employee_ModifyButton.Size = new System.Drawing.Size(75, 23);
             this.employee_ModifyButton.TabIndex = 27;
@@ -1967,47 +1967,47 @@
             this.student_studentGrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.student_studentGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.student_studentGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle43.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle43.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle43.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle43.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle43.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle43.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle43.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.student_studentGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle43;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.student_studentGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.student_studentGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle44.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle44.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle44.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle44.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle44.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle44.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle44.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.student_studentGrid.DefaultCellStyle = dataGridViewCellStyle44;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.student_studentGrid.DefaultCellStyle = dataGridViewCellStyle11;
             this.student_studentGrid.EnableHeadersVisualStyles = false;
             this.student_studentGrid.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.student_studentGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.student_studentGrid.Location = new System.Drawing.Point(18, 45);
             this.student_studentGrid.Name = "student_studentGrid";
             this.student_studentGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle45.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle45.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle45.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle45.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle45.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle45.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle45.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.student_studentGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle45;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.student_studentGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.student_studentGrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.student_studentGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.student_studentGrid.Size = new System.Drawing.Size(426, 460);
+            this.student_studentGrid.Size = new System.Drawing.Size(682, 541);
             this.student_studentGrid.TabIndex = 2;
             this.student_studentGrid.Click += new System.EventHandler(this.Student_SelectedChanged);
             // 
             // metroLabel36
             // 
             this.metroLabel36.AutoSize = true;
-            this.metroLabel36.Location = new System.Drawing.Point(507, 75);
+            this.metroLabel36.Location = new System.Drawing.Point(780, 49);
             this.metroLabel36.Name = "metroLabel36";
             this.metroLabel36.Size = new System.Drawing.Size(59, 19);
             this.metroLabel36.TabIndex = 3;
@@ -2028,7 +2028,7 @@
             this.student_FirstNameBox.CustomButton.UseSelectable = true;
             this.student_FirstNameBox.CustomButton.Visible = false;
             this.student_FirstNameBox.Lines = new string[0];
-            this.student_FirstNameBox.Location = new System.Drawing.Point(603, 71);
+            this.student_FirstNameBox.Location = new System.Drawing.Point(876, 45);
             this.student_FirstNameBox.MaxLength = 32767;
             this.student_FirstNameBox.Name = "student_FirstNameBox";
             this.student_FirstNameBox.PasswordChar = '\0';
@@ -2058,7 +2058,7 @@
             this.student_LastNameBox.CustomButton.UseSelectable = true;
             this.student_LastNameBox.CustomButton.Visible = false;
             this.student_LastNameBox.Lines = new string[0];
-            this.student_LastNameBox.Location = new System.Drawing.Point(603, 110);
+            this.student_LastNameBox.Location = new System.Drawing.Point(876, 84);
             this.student_LastNameBox.MaxLength = 32767;
             this.student_LastNameBox.Name = "student_LastNameBox";
             this.student_LastNameBox.PasswordChar = '\0';
@@ -2076,7 +2076,7 @@
             // metroLabel37
             // 
             this.metroLabel37.AutoSize = true;
-            this.metroLabel37.Location = new System.Drawing.Point(507, 114);
+            this.metroLabel37.Location = new System.Drawing.Point(780, 88);
             this.metroLabel37.Name = "metroLabel37";
             this.metroLabel37.Size = new System.Drawing.Size(58, 19);
             this.metroLabel37.TabIndex = 5;
@@ -2097,7 +2097,7 @@
             this.student_EmailBox.CustomButton.UseSelectable = true;
             this.student_EmailBox.CustomButton.Visible = false;
             this.student_EmailBox.Lines = new string[0];
-            this.student_EmailBox.Location = new System.Drawing.Point(603, 151);
+            this.student_EmailBox.Location = new System.Drawing.Point(876, 125);
             this.student_EmailBox.MaxLength = 32767;
             this.student_EmailBox.Name = "student_EmailBox";
             this.student_EmailBox.PasswordChar = '\0';
@@ -2115,7 +2115,7 @@
             // metroLabel38
             // 
             this.metroLabel38.AutoSize = true;
-            this.metroLabel38.Location = new System.Drawing.Point(507, 155);
+            this.metroLabel38.Location = new System.Drawing.Point(780, 129);
             this.metroLabel38.Name = "metroLabel38";
             this.metroLabel38.Size = new System.Drawing.Size(41, 19);
             this.metroLabel38.TabIndex = 7;
@@ -2136,7 +2136,7 @@
             this.student_AddressBox.CustomButton.UseSelectable = true;
             this.student_AddressBox.CustomButton.Visible = false;
             this.student_AddressBox.Lines = new string[0];
-            this.student_AddressBox.Location = new System.Drawing.Point(603, 189);
+            this.student_AddressBox.Location = new System.Drawing.Point(876, 163);
             this.student_AddressBox.MaxLength = 32767;
             this.student_AddressBox.Name = "student_AddressBox";
             this.student_AddressBox.PasswordChar = '\0';
@@ -2154,7 +2154,7 @@
             // metroLabel39
             // 
             this.metroLabel39.AutoSize = true;
-            this.metroLabel39.Location = new System.Drawing.Point(507, 193);
+            this.metroLabel39.Location = new System.Drawing.Point(780, 167);
             this.metroLabel39.Name = "metroLabel39";
             this.metroLabel39.Size = new System.Drawing.Size(63, 19);
             this.metroLabel39.TabIndex = 9;
@@ -2175,7 +2175,7 @@
             this.student_PhoneNumberBox.CustomButton.UseSelectable = true;
             this.student_PhoneNumberBox.CustomButton.Visible = false;
             this.student_PhoneNumberBox.Lines = new string[0];
-            this.student_PhoneNumberBox.Location = new System.Drawing.Point(826, 189);
+            this.student_PhoneNumberBox.Location = new System.Drawing.Point(1099, 163);
             this.student_PhoneNumberBox.MaxLength = 32767;
             this.student_PhoneNumberBox.Name = "student_PhoneNumberBox";
             this.student_PhoneNumberBox.PasswordChar = '\0';
@@ -2193,7 +2193,7 @@
             // metroLabel40
             // 
             this.metroLabel40.AutoSize = true;
-            this.metroLabel40.Location = new System.Drawing.Point(697, 193);
+            this.metroLabel40.Location = new System.Drawing.Point(970, 167);
             this.metroLabel40.Name = "metroLabel40";
             this.metroLabel40.Size = new System.Drawing.Size(129, 19);
             this.metroLabel40.TabIndex = 17;
@@ -2214,7 +2214,7 @@
             this.student_BloodBox.CustomButton.UseSelectable = true;
             this.student_BloodBox.CustomButton.Visible = false;
             this.student_BloodBox.Lines = new string[0];
-            this.student_BloodBox.Location = new System.Drawing.Point(826, 151);
+            this.student_BloodBox.Location = new System.Drawing.Point(1099, 125);
             this.student_BloodBox.MaxLength = 32767;
             this.student_BloodBox.Name = "student_BloodBox";
             this.student_BloodBox.PasswordChar = '\0';
@@ -2232,7 +2232,7 @@
             // metroLabel41
             // 
             this.metroLabel41.AutoSize = true;
-            this.metroLabel41.Location = new System.Drawing.Point(730, 155);
+            this.metroLabel41.Location = new System.Drawing.Point(1003, 129);
             this.metroLabel41.Name = "metroLabel41";
             this.metroLabel41.Size = new System.Drawing.Size(97, 19);
             this.metroLabel41.TabIndex = 15;
@@ -2253,7 +2253,7 @@
             this.student_BirthDateBox.CustomButton.UseSelectable = true;
             this.student_BirthDateBox.CustomButton.Visible = false;
             this.student_BirthDateBox.Lines = new string[0];
-            this.student_BirthDateBox.Location = new System.Drawing.Point(826, 110);
+            this.student_BirthDateBox.Location = new System.Drawing.Point(1099, 84);
             this.student_BirthDateBox.MaxLength = 32767;
             this.student_BirthDateBox.Name = "student_BirthDateBox";
             this.student_BirthDateBox.PasswordChar = '\0';
@@ -2271,7 +2271,7 @@
             // metroLabel42
             // 
             this.metroLabel42.AutoSize = true;
-            this.metroLabel42.Location = new System.Drawing.Point(697, 114);
+            this.metroLabel42.Location = new System.Drawing.Point(970, 88);
             this.metroLabel42.Name = "metroLabel42";
             this.metroLabel42.Size = new System.Drawing.Size(130, 19);
             this.metroLabel42.TabIndex = 13;
@@ -2292,7 +2292,7 @@
             this.student_CurpBox.CustomButton.UseSelectable = true;
             this.student_CurpBox.CustomButton.Visible = false;
             this.student_CurpBox.Lines = new string[0];
-            this.student_CurpBox.Location = new System.Drawing.Point(826, 71);
+            this.student_CurpBox.Location = new System.Drawing.Point(1099, 45);
             this.student_CurpBox.MaxLength = 32767;
             this.student_CurpBox.Name = "student_CurpBox";
             this.student_CurpBox.PasswordChar = '\0';
@@ -2310,7 +2310,7 @@
             // metroLabel43
             // 
             this.metroLabel43.AutoSize = true;
-            this.metroLabel43.Location = new System.Drawing.Point(776, 75);
+            this.metroLabel43.Location = new System.Drawing.Point(1049, 49);
             this.metroLabel43.Name = "metroLabel43";
             this.metroLabel43.Size = new System.Drawing.Size(43, 19);
             this.metroLabel43.TabIndex = 11;
@@ -2318,7 +2318,7 @@
             // 
             // student_ModifyButton
             // 
-            this.student_ModifyButton.Location = new System.Drawing.Point(667, 246);
+            this.student_ModifyButton.Location = new System.Drawing.Point(940, 220);
             this.student_ModifyButton.Name = "student_ModifyButton";
             this.student_ModifyButton.Size = new System.Drawing.Size(75, 23);
             this.student_ModifyButton.TabIndex = 19;
@@ -2341,7 +2341,7 @@
             this.student_IdBox.CustomButton.UseSelectable = true;
             this.student_IdBox.CustomButton.Visible = false;
             this.student_IdBox.Lines = new string[0];
-            this.student_IdBox.Location = new System.Drawing.Point(986, 71);
+            this.student_IdBox.Location = new System.Drawing.Point(1259, 45);
             this.student_IdBox.MaxLength = 32767;
             this.student_IdBox.Name = "student_IdBox";
             this.student_IdBox.PasswordChar = '\0';
@@ -2360,7 +2360,7 @@
             // metroLabel44
             // 
             this.metroLabel44.AutoSize = true;
-            this.metroLabel44.Location = new System.Drawing.Point(936, 75);
+            this.metroLabel44.Location = new System.Drawing.Point(1209, 49);
             this.metroLabel44.Name = "metroLabel44";
             this.metroLabel44.Size = new System.Drawing.Size(20, 19);
             this.metroLabel44.TabIndex = 20;
@@ -2369,7 +2369,7 @@
             // metroLabel45
             // 
             this.metroLabel45.AutoSize = true;
-            this.metroLabel45.Location = new System.Drawing.Point(535, 53);
+            this.metroLabel45.Location = new System.Drawing.Point(865, 93);
             this.metroLabel45.Name = "metroLabel45";
             this.metroLabel45.Size = new System.Drawing.Size(64, 19);
             this.metroLabel45.TabIndex = 3;
@@ -2390,7 +2390,7 @@
             this.professor_FirstNameBox.CustomButton.UseSelectable = true;
             this.professor_FirstNameBox.CustomButton.Visible = false;
             this.professor_FirstNameBox.Lines = new string[0];
-            this.professor_FirstNameBox.Location = new System.Drawing.Point(641, 53);
+            this.professor_FirstNameBox.Location = new System.Drawing.Point(971, 93);
             this.professor_FirstNameBox.MaxLength = 32767;
             this.professor_FirstNameBox.Name = "professor_FirstNameBox";
             this.professor_FirstNameBox.PasswordChar = '\0';
@@ -2420,7 +2420,7 @@
             this.professor_LastNameBox.CustomButton.UseSelectable = true;
             this.professor_LastNameBox.CustomButton.Visible = false;
             this.professor_LastNameBox.Lines = new string[0];
-            this.professor_LastNameBox.Location = new System.Drawing.Point(641, 92);
+            this.professor_LastNameBox.Location = new System.Drawing.Point(971, 132);
             this.professor_LastNameBox.MaxLength = 32767;
             this.professor_LastNameBox.Name = "professor_LastNameBox";
             this.professor_LastNameBox.PasswordChar = '\0';
@@ -2438,7 +2438,7 @@
             // metroLabel46
             // 
             this.metroLabel46.AutoSize = true;
-            this.metroLabel46.Location = new System.Drawing.Point(535, 92);
+            this.metroLabel46.Location = new System.Drawing.Point(865, 132);
             this.metroLabel46.Name = "metroLabel46";
             this.metroLabel46.Size = new System.Drawing.Size(63, 19);
             this.metroLabel46.TabIndex = 5;
@@ -2459,7 +2459,7 @@
             this.professor_PhoneNumberBox.CustomButton.UseSelectable = true;
             this.professor_PhoneNumberBox.CustomButton.Visible = false;
             this.professor_PhoneNumberBox.Lines = new string[0];
-            this.professor_PhoneNumberBox.Location = new System.Drawing.Point(641, 133);
+            this.professor_PhoneNumberBox.Location = new System.Drawing.Point(971, 173);
             this.professor_PhoneNumberBox.MaxLength = 32767;
             this.professor_PhoneNumberBox.Name = "professor_PhoneNumberBox";
             this.professor_PhoneNumberBox.PasswordChar = '\0';
@@ -2477,7 +2477,7 @@
             // metroLabel47
             // 
             this.metroLabel47.AutoSize = true;
-            this.metroLabel47.Location = new System.Drawing.Point(535, 133);
+            this.metroLabel47.Location = new System.Drawing.Point(835, 173);
             this.metroLabel47.Name = "metroLabel47";
             this.metroLabel47.Size = new System.Drawing.Size(129, 19);
             this.metroLabel47.TabIndex = 7;
@@ -2498,7 +2498,7 @@
             this.professor_AddressBox.CustomButton.UseSelectable = true;
             this.professor_AddressBox.CustomButton.Visible = false;
             this.professor_AddressBox.Lines = new string[0];
-            this.professor_AddressBox.Location = new System.Drawing.Point(641, 173);
+            this.professor_AddressBox.Location = new System.Drawing.Point(971, 213);
             this.professor_AddressBox.MaxLength = 32767;
             this.professor_AddressBox.Name = "professor_AddressBox";
             this.professor_AddressBox.PasswordChar = '\0';
@@ -2516,7 +2516,7 @@
             // metroLabel48
             // 
             this.metroLabel48.AutoSize = true;
-            this.metroLabel48.Location = new System.Drawing.Point(535, 173);
+            this.metroLabel48.Location = new System.Drawing.Point(865, 213);
             this.metroLabel48.Name = "metroLabel48";
             this.metroLabel48.Size = new System.Drawing.Size(63, 19);
             this.metroLabel48.TabIndex = 9;
@@ -2537,7 +2537,7 @@
             this.professor_EmailBox.CustomButton.UseSelectable = true;
             this.professor_EmailBox.CustomButton.Visible = false;
             this.professor_EmailBox.Lines = new string[0];
-            this.professor_EmailBox.Location = new System.Drawing.Point(641, 215);
+            this.professor_EmailBox.Location = new System.Drawing.Point(971, 255);
             this.professor_EmailBox.MaxLength = 32767;
             this.professor_EmailBox.Name = "professor_EmailBox";
             this.professor_EmailBox.PasswordChar = '\0';
@@ -2555,7 +2555,7 @@
             // metroLabel49
             // 
             this.metroLabel49.AutoSize = true;
-            this.metroLabel49.Location = new System.Drawing.Point(535, 215);
+            this.metroLabel49.Location = new System.Drawing.Point(865, 255);
             this.metroLabel49.Name = "metroLabel49";
             this.metroLabel49.Size = new System.Drawing.Size(41, 19);
             this.metroLabel49.TabIndex = 11;
@@ -2576,7 +2576,7 @@
             this.professor_BirthDateBox.CustomButton.UseSelectable = true;
             this.professor_BirthDateBox.CustomButton.Visible = false;
             this.professor_BirthDateBox.Lines = new string[0];
-            this.professor_BirthDateBox.Location = new System.Drawing.Point(641, 258);
+            this.professor_BirthDateBox.Location = new System.Drawing.Point(971, 298);
             this.professor_BirthDateBox.MaxLength = 32767;
             this.professor_BirthDateBox.Name = "professor_BirthDateBox";
             this.professor_BirthDateBox.PasswordChar = '\0';
@@ -2594,7 +2594,7 @@
             // metroLabel50
             // 
             this.metroLabel50.AutoSize = true;
-            this.metroLabel50.Location = new System.Drawing.Point(535, 258);
+            this.metroLabel50.Location = new System.Drawing.Point(836, 298);
             this.metroLabel50.Name = "metroLabel50";
             this.metroLabel50.Size = new System.Drawing.Size(130, 19);
             this.metroLabel50.TabIndex = 13;
@@ -2615,7 +2615,7 @@
             this.professor_IdBox.CustomButton.UseSelectable = true;
             this.professor_IdBox.CustomButton.Visible = false;
             this.professor_IdBox.Lines = new string[0];
-            this.professor_IdBox.Location = new System.Drawing.Point(889, 312);
+            this.professor_IdBox.Location = new System.Drawing.Point(1219, 352);
             this.professor_IdBox.MaxLength = 32767;
             this.professor_IdBox.Name = "professor_IdBox";
             this.professor_IdBox.PasswordChar = '\0';
@@ -2634,7 +2634,7 @@
             // metroLabel51
             // 
             this.metroLabel51.AutoSize = true;
-            this.metroLabel51.Location = new System.Drawing.Point(783, 312);
+            this.metroLabel51.Location = new System.Drawing.Point(1113, 352);
             this.metroLabel51.Name = "metroLabel51";
             this.metroLabel51.Size = new System.Drawing.Size(20, 19);
             this.metroLabel51.TabIndex = 15;
@@ -2655,7 +2655,7 @@
             this.professor_CurpBox.CustomButton.UseSelectable = true;
             this.professor_CurpBox.CustomButton.Visible = false;
             this.professor_CurpBox.Lines = new string[0];
-            this.professor_CurpBox.Location = new System.Drawing.Point(889, 258);
+            this.professor_CurpBox.Location = new System.Drawing.Point(1219, 298);
             this.professor_CurpBox.MaxLength = 32767;
             this.professor_CurpBox.Name = "professor_CurpBox";
             this.professor_CurpBox.PasswordChar = '\0';
@@ -2673,7 +2673,7 @@
             // metroLabel52
             // 
             this.metroLabel52.AutoSize = true;
-            this.metroLabel52.Location = new System.Drawing.Point(783, 258);
+            this.metroLabel52.Location = new System.Drawing.Point(1113, 298);
             this.metroLabel52.Name = "metroLabel52";
             this.metroLabel52.Size = new System.Drawing.Size(43, 19);
             this.metroLabel52.TabIndex = 27;
@@ -2694,7 +2694,7 @@
             this.professor_JobBox.CustomButton.UseSelectable = true;
             this.professor_JobBox.CustomButton.Visible = false;
             this.professor_JobBox.Lines = new string[0];
-            this.professor_JobBox.Location = new System.Drawing.Point(889, 215);
+            this.professor_JobBox.Location = new System.Drawing.Point(1219, 255);
             this.professor_JobBox.MaxLength = 32767;
             this.professor_JobBox.Name = "professor_JobBox";
             this.professor_JobBox.PasswordChar = '\0';
@@ -2712,7 +2712,7 @@
             // metroLabel53
             // 
             this.metroLabel53.AutoSize = true;
-            this.metroLabel53.Location = new System.Drawing.Point(783, 215);
+            this.metroLabel53.Location = new System.Drawing.Point(1113, 255);
             this.metroLabel53.Name = "metroLabel53";
             this.metroLabel53.Size = new System.Drawing.Size(48, 19);
             this.metroLabel53.TabIndex = 25;
@@ -2733,7 +2733,7 @@
             this.professor_SalaryBox.CustomButton.UseSelectable = true;
             this.professor_SalaryBox.CustomButton.Visible = false;
             this.professor_SalaryBox.Lines = new string[0];
-            this.professor_SalaryBox.Location = new System.Drawing.Point(889, 173);
+            this.professor_SalaryBox.Location = new System.Drawing.Point(1219, 213);
             this.professor_SalaryBox.MaxLength = 32767;
             this.professor_SalaryBox.Name = "professor_SalaryBox";
             this.professor_SalaryBox.PasswordChar = '\0';
@@ -2751,7 +2751,7 @@
             // metroLabel54
             // 
             this.metroLabel54.AutoSize = true;
-            this.metroLabel54.Location = new System.Drawing.Point(783, 173);
+            this.metroLabel54.Location = new System.Drawing.Point(1113, 213);
             this.metroLabel54.Name = "metroLabel54";
             this.metroLabel54.Size = new System.Drawing.Size(49, 19);
             this.metroLabel54.TabIndex = 23;
@@ -2772,7 +2772,7 @@
             this.professor_BloodTypeBox.CustomButton.UseSelectable = true;
             this.professor_BloodTypeBox.CustomButton.Visible = false;
             this.professor_BloodTypeBox.Lines = new string[0];
-            this.professor_BloodTypeBox.Location = new System.Drawing.Point(889, 133);
+            this.professor_BloodTypeBox.Location = new System.Drawing.Point(1219, 173);
             this.professor_BloodTypeBox.MaxLength = 32767;
             this.professor_BloodTypeBox.Name = "professor_BloodTypeBox";
             this.professor_BloodTypeBox.PasswordChar = '\0';
@@ -2790,7 +2790,7 @@
             // metroLabel55
             // 
             this.metroLabel55.AutoSize = true;
-            this.metroLabel55.Location = new System.Drawing.Point(783, 133);
+            this.metroLabel55.Location = new System.Drawing.Point(1113, 173);
             this.metroLabel55.Name = "metroLabel55";
             this.metroLabel55.Size = new System.Drawing.Size(97, 19);
             this.metroLabel55.TabIndex = 21;
@@ -2811,7 +2811,7 @@
             this.professor_BankAccountBox.CustomButton.UseSelectable = true;
             this.professor_BankAccountBox.CustomButton.Visible = false;
             this.professor_BankAccountBox.Lines = new string[0];
-            this.professor_BankAccountBox.Location = new System.Drawing.Point(889, 92);
+            this.professor_BankAccountBox.Location = new System.Drawing.Point(1219, 132);
             this.professor_BankAccountBox.MaxLength = 32767;
             this.professor_BankAccountBox.Name = "professor_BankAccountBox";
             this.professor_BankAccountBox.PasswordChar = '\0';
@@ -2829,7 +2829,7 @@
             // metroLabel56
             // 
             this.metroLabel56.AutoSize = true;
-            this.metroLabel56.Location = new System.Drawing.Point(783, 92);
+            this.metroLabel56.Location = new System.Drawing.Point(1113, 132);
             this.metroLabel56.Name = "metroLabel56";
             this.metroLabel56.Size = new System.Drawing.Size(109, 19);
             this.metroLabel56.TabIndex = 19;
@@ -2850,7 +2850,7 @@
             this.professor_BankBox.CustomButton.UseSelectable = true;
             this.professor_BankBox.CustomButton.Visible = false;
             this.professor_BankBox.Lines = new string[0];
-            this.professor_BankBox.Location = new System.Drawing.Point(889, 53);
+            this.professor_BankBox.Location = new System.Drawing.Point(1219, 93);
             this.professor_BankBox.MaxLength = 32767;
             this.professor_BankBox.Name = "professor_BankBox";
             this.professor_BankBox.PasswordChar = '\0';
@@ -2868,7 +2868,7 @@
             // metroLabel57
             // 
             this.metroLabel57.AutoSize = true;
-            this.metroLabel57.Location = new System.Drawing.Point(783, 53);
+            this.metroLabel57.Location = new System.Drawing.Point(1113, 93);
             this.metroLabel57.Name = "metroLabel57";
             this.metroLabel57.Size = new System.Drawing.Size(45, 19);
             this.metroLabel57.TabIndex = 17;
@@ -2876,7 +2876,7 @@
             // 
             // metroButton1
             // 
-            this.metroButton1.Location = new System.Drawing.Point(570, 312);
+            this.metroButton1.Location = new System.Drawing.Point(900, 352);
             this.metroButton1.Name = "metroButton1";
             this.metroButton1.Size = new System.Drawing.Size(100, 23);
             this.metroButton1.TabIndex = 29;
@@ -2888,7 +2888,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1119, 659);
+            this.ClientSize = new System.Drawing.Size(1589, 831);
             this.Controls.Add(this.adminTabControl);
             this.Name = "AdminView";
             this.Text = "Schoolegister";

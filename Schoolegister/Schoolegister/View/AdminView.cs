@@ -11,6 +11,7 @@ using MetroFramework.Forms;
 using MetroFramework.Controls;
 using System.Diagnostics;
 using Schoolegister.Model;
+using Schoolegister.Exceptions;
 
 namespace Schoolegister.View
 {
@@ -337,7 +338,18 @@ namespace Schoolegister.View
 
         private void StudentAddedToCourse_Click(object sender, EventArgs e)
         {
-            Course_StudentAdded(sender, e);
+            try
+            {
+                Course_StudentAdded?.Invoke(sender, e);
+            }
+            catch(IDNotFoundException)
+            {
+                MessageBox.Show("No se encontre la ID especificada");
+            }
+            catch(StudentExistsOnList)
+            {
+                MessageBox.Show("El estudiante ya esta registrado en la clase");
+            }
         }
 
         private void Student_SelectedChanged(object sender, EventArgs e)
